@@ -1,8 +1,7 @@
 # Raw data (too large for version control)
 data/snapshots/
 
-# Generated outputs
-data/output/*.csv
+# Large generated outputs (version small research CSVs explicitly)
 
 # Python
 __pycache__/

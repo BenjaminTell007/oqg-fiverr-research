@@ -1,120 +1,179 @@
 """Parse gig price and metadata from Fiverr HTML snapshots."""
 
-import re
-from dataclasses import dataclass, field, asdict
+import pandas as pd
+from pathlib import Path
 from bs4 import BeautifulSoup
 
-
-@dataclass
-class Gig:
-    title: str = ""
-    seller: str = ""
-    price_usd: float | None = None   # starting price shown on listing card
-    rating: float | None = None
-    review_count: int | None = None
-    seller_level: str = ""
-    category: str = ""
-    snapshot_timestamp: str = ""
-    wayback_url: str = ""
-
-    def to_dict(self) -> dict:
-        return asdict(self)
+SNAPSHOTS_DIR = Path(__file__).parent.parent / "data" / "snapshots"
+OUTPUT_DIR    = Path(__file__).parent.parent / "data" / "output"
 
 
-# --- Price extraction helpers ---
-
-_PRICE_RE = re.compile(r"\$[\s]?([\d,]+(?:\.\d{1,2})?)")
-
-
-def parse_price(text: str) -> float | None:
-    m = _PRICE_RE.search(text)
-    if not m:
-        return None
-    try:
-        return float(m.group(1).replace(",", ""))
-    except ValueError:
-        return None
-
-
-def parse_rating(text: str) -> float | None:
-    try:
-        return float(text.strip())
-    except ValueError:
-        return None
-
-
-def parse_review_count(text: str) -> int | None:
-    # handles "(1.2k)", "(850)", etc.
-    cleaned = text.strip().strip("()")
-    if cleaned.endswith("k"):
-        try:
-            return int(float(cleaned[:-1]) * 1000)
-        except ValueError:
-            return None
-    try:
-        return int(cleaned.replace(",", ""))
-    except ValueError:
-        return None
-
-
-# --- Main extraction entry point ---
-
-def extract_gigs(
-    html: str,
-    category: str = "",
-    snapshot_timestamp: str = "",
-    wayback_url: str = "",
-) -> list[Gig]:
+def extract_gigs(html: str, timestamp: str, category: str) -> list[dict]:
     """
-    Extract gig cards from a Fiverr category page snapshot.
+    Extract gig data from a Fiverr subcategory listing snapshot.
 
-    Fiverr's markup changed several times between 2019-2024, so we attempt
-    multiple selector strategies and return whichever yields results.
+    Confirmed selectors (verified against Wayback HTML, 2022-2024 era):
+      Card root : <div class="gig-card-layout">
+      Price     : <a class="price"> → first <span> child  e.g. "$10"
+      Title     : <h3> → <a> child text
+      Seller    : <div class="seller-name"> → <a> child text
+      Tier      : <span class="level …"> text  e.g. "Level 2 Seller"
+      Rating    : <span class="gig-rating …"> first text node
+      Reviews   : <span> inside gig-rating parens
+
+    Returns one dict per card; low_confidence=True when fewer than 3 prices found.
     """
     soup = BeautifulSoup(html, "html.parser")
-    gigs: list[Gig] = []
+    cards = soup.find_all("div", class_="gig-card-layout")
 
-    # Strategy 1: post-2022 React-rendered cards
-    cards = soup.select("[class*='gig-card']")
-    if not cards:
-        # Strategy 2: older server-rendered listings
-        cards = soup.select(".gig-item, .gig-wrapper, li[data-impression-collected]")
-    if not cards:
-        # Strategy 3: generic product-card fallback
-        cards = soup.select("[data-testid*='gig'], article")
-
+    rows = []
     for card in cards:
-        gig = Gig(
-            category=category,
-            snapshot_timestamp=snapshot_timestamp,
-            wayback_url=wayback_url,
+        # Price: <a class="price"> > <span>
+        price = None
+        price_a = card.find("a", class_="price")
+        if price_a:
+            span = price_a.find("span")
+            if span:
+                raw = span.get_text(strip=True).lstrip("$").replace(",", "")
+                try:
+                    price = float(raw)
+                except ValueError:
+                    pass
+
+        # Title: <h3> > <a>
+        title = None
+        h3 = card.find("h3")
+        if h3:
+            a = h3.find("a")
+            title = (a or h3).get_text(strip=True) or None
+
+        # Seller: <div class="seller-name"> > <a>
+        seller = None
+        seller_div = card.find("div", class_="seller-name")
+        if seller_div:
+            a = seller_div.find("a")
+            seller = (a or seller_div).get_text(strip=True) or None
+
+        # Tier: first <span> whose class list contains "level"
+        tier = None
+        tier_span = card.find("span", class_=lambda c: c and "level" in c)
+        if tier_span:
+            tier = tier_span.get_text(strip=True) or None
+
+        # Rating + review count: <span class="gig-rating …">
+        rating, reviews = None, None
+        rating_span = card.find("span", class_="gig-rating")
+        if not rating_span:
+            rating_span = card.find("span", class_=lambda c: c and "gig-rating" in c)
+        if rating_span:
+            texts = [t.strip() for t in rating_span.find_all(string=True) if t.strip()]
+            for t in texts:
+                try:
+                    v = float(t)
+                    if 1.0 <= v <= 5.0:
+                        rating = v
+                except ValueError:
+                    pass
+            paren = rating_span.get_text()
+            import re
+            m = re.search(r'\(([0-9,k]+)\)', paren)
+            if m:
+                raw_r = m.group(1).replace(",", "")
+                if raw_r.endswith("k"):
+                    reviews = int(float(raw_r[:-1]) * 1000)
+                else:
+                    try:
+                        reviews = int(raw_r)
+                    except ValueError:
+                        pass
+
+        if price is not None or title:
+            rows.append({
+                "timestamp":      timestamp,
+                "category":       category,
+                "price":          price,
+                "title":          title,
+                "seller":         seller,
+                "tier":           tier,
+                "rating":         rating,
+                "reviews":        reviews,
+                "low_confidence": False,
+            })
+
+    low_confidence = sum(1 for r in rows if r["price"] is not None) < 3
+    for r in rows:
+        r["low_confidence"] = low_confidence
+
+    if not rows:
+        rows.append({
+            "timestamp": timestamp, "category": category,
+            "price": None, "title": None, "seller": None,
+            "tier": None, "rating": None, "reviews": None,
+            "low_confidence": True,
+        })
+
+    return rows
+
+
+# ---------------------------------------------------------------------------
+# Test block
+# ---------------------------------------------------------------------------
+
+if __name__ == "__main__":
+    cached = sorted(SNAPSHOTS_DIR.glob("*.html"))
+    if not cached:
+        print("No cached HTML files found in data/snapshots/. Run scraper.py first.")
+        raise SystemExit(1)
+
+    print(f"Found {len(cached)} cached snapshot(s)\n")
+
+    all_rows = []
+    for path in cached:
+        # Filename format: {timestamp}_{category}.html
+        stem = path.stem
+        underscore = stem.index("_")
+        timestamp = stem[:underscore]
+        category  = stem[underscore + 1:].replace("_", "-")
+
+        html = path.read_text(encoding="utf-8")
+        rows = extract_gigs(html, timestamp=timestamp, category=category)
+        all_rows.extend(rows)
+        flag = " [LOW CONFIDENCE]" if (rows and rows[0]["low_confidence"]) else ""
+        n_prices = sum(1 for r in rows if r["price"] is not None)
+        print(f"  {timestamp}  {category:<22}  {len(rows):>5} rows  "
+              f"{n_prices} prices{flag}")
+
+    # Save full results
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    df = pd.DataFrame(all_rows)
+    out_path = OUTPUT_DIR / "extraction_test.csv"
+    df.to_csv(out_path, index=False)
+    print(f"\nSaved {len(df)} rows to {out_path}")
+
+    # Summary: per category and year
+    df = df[df["price"].notna()].copy()
+    if df.empty:
+        print("\nNo prices extracted — cannot build summary.")
+        raise SystemExit(0)
+
+    df["year"] = df["timestamp"].astype(str).str[:4]
+    summary = (
+        df.groupby(["category", "year"])
+        .agg(
+            gigs_extracted=("price", "count"),
+            pct_low_confidence=("low_confidence", lambda x: f"{x.mean()*100:.0f}%"),
+            min_price=("price", "min"),
+            max_price=("price", "max"),
+            median_price=("price", "median"),
         )
+        .reset_index()
+    )
 
-        title_el = card.select_one("[class*='title'], h3, [itemprop='name']")
-        if title_el:
-            gig.title = title_el.get_text(strip=True)
-
-        seller_el = card.select_one("[class*='seller'], [class*='username']")
-        if seller_el:
-            gig.seller = seller_el.get_text(strip=True)
-
-        price_el = card.select_one("[class*='price'], [data-testid*='price']")
-        if price_el:
-            gig.price_usd = parse_price(price_el.get_text())
-
-        rating_el = card.select_one("[class*='rating-score'], [class*='stars']")
-        if rating_el:
-            gig.rating = parse_rating(rating_el.get_text())
-
-        reviews_el = card.select_one("[class*='reviews-count'], [class*='rating-count']")
-        if reviews_el:
-            gig.review_count = parse_review_count(reviews_el.get_text())
-
-        level_el = card.select_one("[class*='seller-level'], [class*='level-badge']")
-        if level_el:
-            gig.seller_level = level_el.get_text(strip=True)
-
-        if gig.title or gig.price_usd is not None:
-            gigs.append(gig)
-
-    return gigs
+    print("\n" + "=" * 75)
+    print(f"{'category':<22} {'year'}  {'gigs':>5}  {'low_conf':>8}  "
+          f"{'min':>6}  {'max':>7}  {'median':>7}")
+    print("=" * 75)
+    for _, r in summary.iterrows():
+        print(f"  {r['category']:<20} {r['year']}  {r['gigs_extracted']:>5}  "
+              f"{r['pct_low_confidence']:>8}  "
+              f"${r['min_price']:>5.0f}  ${r['max_price']:>6.0f}  ${r['median_price']:>6.0f}")

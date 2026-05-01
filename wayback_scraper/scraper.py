@@ -47,7 +47,7 @@ def fetch_with_requests(timestamp: str, original_url: str, category: str = "") -
     url = _wayback_url(timestamp, original_url)
     headers = {"User-Agent": USER_AGENT}
     try:
-        resp = requests.get(url, headers=headers, timeout=10)
+        resp = requests.get(url, headers=headers, timeout=30)
         resp.raise_for_status()
         html = resp.text
     except requests.RequestException as exc:

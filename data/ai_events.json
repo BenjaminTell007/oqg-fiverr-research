@@ -1,0 +1,38 @@
+{
+  "text_llms": {
+    "label": "Text LLMs",
+    "category": "content-writing",
+    "events": [
+      { "date": "2022-11-30", "name": "ChatGPT public launch" },
+      { "date": "2023-02-01", "name": "ChatGPT Plus launch" },
+      { "date": "2023-03-14", "name": "GPT-4 release" },
+      { "date": "2024-05-13", "name": "GPT-4o free to all" }
+    ]
+  },
+  "image_generation": {
+    "label": "Image Generation",
+    "category": "graphics-design/creative-logo-design",
+    "events": [
+      { "date": "2022-07-12", "name": "Midjourney open beta" },
+      { "date": "2022-08-22", "name": "Stable Diffusion public release" },
+      { "date": "2023-03-15", "name": "Midjourney V5" }
+    ]
+  },
+  "code_generation": {
+    "label": "Code Generation",
+    "category": "wordpress/landing-pages",
+    "events": [
+      { "date": "2022-06-21", "name": "GitHub Copilot GA" },
+      { "date": "2023-03-01", "name": "Cursor launch" },
+      { "date": "2024-05-13", "name": "GPT-4o free to all" },
+      { "date": "2024-12-31", "name": "Vibe coding / Cursor mainstream" }
+    ]
+  },
+  "data_analysis": {
+    "label": "Data Analysis",
+    "category": "control",
+    "events": [
+      { "date": "2023-07-01", "name": "OpenAI Code Interpreter launch (secondary only)" }
+    ]
+  }
+}

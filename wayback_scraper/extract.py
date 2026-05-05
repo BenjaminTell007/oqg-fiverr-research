@@ -54,12 +54,18 @@ def extract_gigs(html: str, timestamp: str, category: str) -> list[dict]:
                     except ValueError:
                         pass
 
-        # Title: <h3> > <a>
+        # Title — two formats:
+        #   Pre-2024: <h3><a>title</a></h3>
+        #   2024+:    <p role="heading" aria-level="3" title="...">title</p>
         title = None
         h3 = card.find("h3")
         if h3:
             a = h3.find("a")
             title = (a or h3).get_text(strip=True) or None
+        if not title:
+            p = card.find("p", attrs={"role": "heading"})
+            if p:
+                title = p.get("title") or p.get_text(strip=True) or None
 
         # Seller: <div class="seller-name"> > <a>
         seller = None

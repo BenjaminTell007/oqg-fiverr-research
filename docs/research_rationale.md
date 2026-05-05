@@ -98,6 +98,44 @@ By 2025, the market has had 2–3 years to adapt to generative AI. Price changes
 
 ---
 
+## 4. Bimodality Measurement Approach
+
+A core hypothesis of this study is that AI disruption widens the gap between top-tier and bottom-tier sellers, producing a **bimodal price distribution** — one mode for AI-aided commodity gigs and another for premium human-labeled work. Sarle's bimodality coefficient (BC) and Hartigan's dip statistic are the standard tools for testing this. The first analysis pass tried the textbook approach: per-month BC with the canonical 0.555 threshold, and counting the first month each category crossed it. That approach failed, and the workflow had to be rebuilt.
+
+### 4.1 Why the Raw BC-Threshold Approach Failed
+
+Three problems surfaced together:
+
+1. **Structural bimodality predates AI.** All four categories — including the data-entry control — had months where BC > 0.555 in 2021, well before any generative AI release. Fiverr is a tier-priced platform: gigs cluster around recurring price points ($5, $10, $25, $50, $100) reflecting Fiverr's Basic/Standard/Premium package structure. Even within a single category, those clusters create multimodal price distributions independent of AI. The control category crossed the threshold 11 times across the panel — more than the social-media-design treatment category. Threshold-crossing is therefore not a treatment indicator; it is a property of the platform.
+
+2. **Monthly resolution is too noisy.** Each (category, month) cell holds roughly 5–10 gig observations. BC depends on the third and fourth sample moments, both of which are unstable at small n. The monthly series oscillates around 0.555 for every category, so "first crossing" is dominated by sampling noise rather than any underlying distributional change.
+
+3. **Numerical instability.** When prices in a month are clustered tightly on a single tier (e.g., several $5 gigs), `scipy.stats.skew` and `kurtosis` raise precision-loss warnings — the moment calculations are near catastrophic cancellation. BC values from those cells are unreliable in either direction.
+
+The combined effect is that the textbook test cannot distinguish AI-driven bimodality from Fiverr's baseline tier structure.
+
+### 4.2 The Three Refined Metrics
+
+The revised approach replaces "did BC cross 0.555?" with three complementary questions, each addressing a different limitation above.
+
+**(a) Quarterly aggregation with Hartigan dip p-values.** Aggregating to quarter (n ≈ 20–30 per cell) stabilizes the moment calculations and pushes most cells well above the n ≥ 10 reliability floor. Significance of the dip test (`dip_p < 0.05`) replaces the BC threshold as the unimodality-rejection criterion — it is properly calibrated for sample size and does not assume any specific alternative shape. The share of quarters per category with `dip_p < 0.05` becomes the primary "is this distribution multimodal" indicator.
+
+**(b) Six-month trailing rolling mean of monthly BC.** This metric trades resolution for smoothness. The trailing window (no look-ahead) avoids contaminating pre-shock periods with post-shock data, which is critical for ITS interpretation. The smoothed series visualizes whether bimodality is **drifting** within a category, independent of any single noisy month.
+
+**(c) Pre-shock vs. post-shock mean BC, Welch t-test.** Per category, mean quarterly BC before the primary shock vs. after, with unequal-variance t-test. This directly answers "did the level of bimodality change at the shock?" rather than "was it ever above some threshold?". Reported alongside the dip-significance share so a coefficient direction is interpretable.
+
+### 4.3 Why the Treatment-Minus-Control Differential Is Robust to Structural Bimodality
+
+The fourth metric — quarterly `BC_treatment − BC_control` — is the design-level fix for the structural-bimodality problem.
+
+If Fiverr's tier-pricing structure produces baseline bimodality in *every* category (the data-entry control confirms this), then the absolute BC level for any treatment category is contaminated by that platform-wide effect. Subtracting the control's BC at the same point in time differences out anything common to the platform: tier-package design changes, currency/UX rollouts, search-ranking tweaks, macroeconomic effects on Fiverr-wide pricing. What remains in the differential is the component of treatment-category bimodality that is *not* shared with a category AI did not affect.
+
+Under the disruption hypothesis the differential should be near zero pre-shock (both categories share the same structural bimodality) and shift positive post-shock (treatment categories develop AI-specific bimodality the control does not). Under the null it stays flat regardless of where the AI shock falls. This is the same identification logic as the formal DiD specification in `docs/its_specification.md` §4.1, applied to the bimodality outcome rather than the price level — and it is the metric that should drive RQ2 conclusions when the within-category ITS gives ambiguous results.
+
+The differential is reported in the third panel of `data/output/bimodality_timeseries_v2.png`. It does not assume the BC threshold has any particular value; it asks only whether treatment categories diverge from the control over time.
+
+---
+
 ## Summary
 
 | Decision | Choice | Key Reason |

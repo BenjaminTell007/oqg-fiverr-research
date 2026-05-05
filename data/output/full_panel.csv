@@ -175,6 +175,22 @@ timestamp,date,category,price,title,seller,tier,rating,reviews,low_confidence
 20220901114313,2022-09-01,content-writing/creative-writing,10.0,I will write a personalized poem for you within 12 hours,anjalsingh04,Level 2 Seller,5.0,154.0,False
 20220901114313,2022-09-01,content-writing/creative-writing,35.0,"I will professionally write a powerful, convincing letter",sandycharity,Level 2 Seller,4.9,683.0,False
 20220901114313,2022-09-01,content-writing/creative-writing,150.0,I will be a truly creative writer,jefocles,Top Rated Seller,5.0,291.0,False
+20230101040106,2023-01-01,content-writing/creative-writing,15.0,I will create amazing poetry and interesting stories,activewriter001,Level 2 Seller,5.0,421.0,False
+20230101040106,2023-01-01,content-writing/creative-writing,150.0,I will ghostwrite your fiction story,luna_rei,Level 2 Seller,5.0,106.0,False
+20230101040106,2023-01-01,content-writing/creative-writing,5.0,I will write custom erotica for your darkest fantasies,amanita_moment,Level 1 Seller,5.0,22.0,False
+20230101040106,2023-01-01,content-writing/creative-writing,35.0,I will tell your story and write your storytelling content,tsparke,Level 2 Seller,4.9,186.0,False
+20230101040106,2023-01-01,content-writing/creative-writing,10.0,I will write you a poem or prose on anything,jasonenukora,Level 2 Seller,5.0,93.0,False
+20230101040106,2023-01-01,content-writing/creative-writing,20.0,I will write an apology letter that will save your ash,melissajuliette,Level 2 Seller,5.0,138.0,False
+20230101040106,2023-01-01,content-writing/creative-writing,55.0,I will write your personal or business letter,rickflix,Top Rated Seller,5.0,417.0,False
+20230101040106,2023-01-01,content-writing/creative-writing,15.0,I will ghostwrite you a creative poem,sbmusic,Level 2 Seller,5.0,563.0,False
+20230203145308,2023-02-03,content-writing/creative-writing,5.0,I will write a quality poem about anything,slickshotgames,Level 2 Seller,5.0,315.0,False
+20230203145308,2023-02-03,content-writing/creative-writing,10.0,I will write a personalized poem for you within 12 hours,anjalsingh04,Level 2 Seller,5.0,170.0,False
+20230203145308,2023-02-03,content-writing/creative-writing,125.0,I will write or ghostwrite an influential op ed column or essay,jwreilly,Level 2 Seller,5.0,47.0,False
+20230203145308,2023-02-03,content-writing/creative-writing,50.0,"I will write your personal biography, brand bio, about me page in 24h",stephanvogel,Level 2 Seller,4.8,62.0,False
+20230203145308,2023-02-03,content-writing/creative-writing,20.0,I will write science fiction or fantasy for you,fantasyarbit3r,Level 2 Seller,5.0,103.0,False
+20230203145308,2023-02-03,content-writing/creative-writing,10.0,I will do creative writing for you,lizydarcy,Level 2 Seller,4.9,31.0,False
+20230203145308,2023-02-03,content-writing/creative-writing,20.0,I will write you deep custom poetry within 24 hours,wimana,Top Rated Seller,5.0,818.0,False
+20230203145308,2023-02-03,content-writing/creative-writing,10.0,"I will be your ghostwriter for articles, letters or short stories",sueohm,Level 2 Seller,4.9,28.0,False
 20230301013424,2023-03-01,content-writing/creative-writing,20.0,I will write you deep custom poetry within 24 hours,wimana,Level 2 Seller,5.0,834.0,False
 20230301013424,2023-03-01,content-writing/creative-writing,10.0,"I will be your ghostwriter for articles, letters or short stories",sueohm,Level 2 Seller,4.9,30.0,False
 20230301013424,2023-03-01,content-writing/creative-writing,100.0,I will write custom erotica and bring your fantasies to life,jessicashackled,Level 2 Seller,5.0,41.0,False
@@ -183,6 +199,150 @@ timestamp,date,category,price,title,seller,tier,rating,reviews,low_confidence
 20230301013424,2023-03-01,content-writing/creative-writing,75.0,I will ghostwrite your romance story,kyriarriaga,Level 2 Seller,5.0,28.0,False
 20230301013424,2023-03-01,content-writing/creative-writing,15.0,I will write you anything you need,alinesantana,Level 2 Seller,4.9,262.0,False
 20230301013424,2023-03-01,content-writing/creative-writing,15.0,"I will write a poem for you, any topic or occasion",soundreading,Level 2 Seller,5.0,85.0,False
+20230402155456,2023-04-02,content-writing/creative-writing,5.0,I will write a flawless biography or bio,bio_goddess,Level 2 Seller,4.8,312.0,False
+20230402155456,2023-04-02,content-writing/creative-writing,15.0,I will write business letters and other correspondence,cierrastorybook,Level 2 Seller,5.0,77.0,False
+20230402155456,2023-04-02,content-writing/creative-writing,10.0,I will write your personalized childrens story,colleenmulcahy,Level 2 Seller,5.0,17.0,False
+20230402155456,2023-04-02,content-writing/creative-writing,10.0,I will ghostwrite high quality erotica or romance for your pleasure,iulianac601,,5.0,19.0,False
+20230402155456,2023-04-02,content-writing/creative-writing,35.0,I will write customized romantic erotic stories,carleywithasea,Top Rated Seller,5.0,700.0,False
+20230402155456,2023-04-02,content-writing/creative-writing,35.0,"I will professionally write a powerful, convincing letter",sandycharity,Level 2 Seller,4.9,829.0,False
+20230402155456,2023-04-02,content-writing/creative-writing,55.0,I will write your personal or business letter,rickflix,Top Rated Seller,5.0,445.0,False
+20230402155456,2023-04-02,content-writing/creative-writing,125.0,I will be a truly creative writer,jefocles,Top Rated Seller,5.0,303.0,False
+20230508052403,2023-05-08,content-writing/creative-writing,5.0,"I will write gamebook adventures, game lore, scary stories, etc",,,,,False
+20230508052403,2023-05-08,content-writing/creative-writing,5.0,I will write a flawless biography or bio,,,,,False
+20230508052403,2023-05-08,content-writing/creative-writing,10.0,I will write lyrics for your song,,,,,False
+20230508052403,2023-05-08,content-writing/creative-writing,5.0,"I will write you a poem, prose or short story on anything",,,,,False
+20230508052403,2023-05-08,content-writing/creative-writing,35.0,"I will professionally write a powerful, convincing letter",,,,,False
+20230508052403,2023-05-08,content-writing/creative-writing,25.0,"I will do written roleplay with you over discord, nsfw, any setting",,,,,False
+20230508052403,2023-05-08,content-writing/creative-writing,55.0,I will write your personal or business letter,,,,,False
+20230508052403,2023-05-08,content-writing/creative-writing,125.0,I will be a truly creative writer,,,,,False
+20230603214122,2023-06-03,content-writing/creative-writing,10.0,I will write a convincing and persuasive letter on any subject,,,,,False
+20230603214122,2023-06-03,content-writing/creative-writing,10.0,I will write a manhwa essay or recap for your blog or youtube,,,,,False
+20230603214122,2023-06-03,content-writing/creative-writing,5.0,I will create lore and world build,,,,,False
+20230603214122,2023-06-03,content-writing/creative-writing,10.0,I will write a thank you so good they want to write a thank you for it,,,,,False
+20230603214122,2023-06-03,content-writing/creative-writing,25.0,I will edit your poetry manuscript or individual poems,,,,,False
+20230603214122,2023-06-03,content-writing/creative-writing,35.0,I will tell your story and write your storytelling content,,,,,False
+20230603214122,2023-06-03,content-writing/creative-writing,55.0,I will write your personal or business letter,,,,,False
+20230603214122,2023-06-03,content-writing/creative-writing,150.0,I will ghostwrite your fiction story,,,,,False
+20230720090428,2023-07-20,content-writing/creative-writing,,I will write the best narrative storytelling for you,,,,,True
+20230720090428,2023-07-20,content-writing/creative-writing,,I will write any kind of letter or email,,,,,True
+20230720090428,2023-07-20,content-writing/creative-writing,,I will worldbuild and write lore for a fantays or sci fi setting,,,,,True
+20230720090428,2023-07-20,content-writing/creative-writing,,I will write meaningful  custom poetry for any occasion in 24 hours,,,,,True
+20230720090428,2023-07-20,content-writing/creative-writing,,"I will professionally write a powerful, convincing letter",,,,,True
+20230720090428,2023-07-20,content-writing/creative-writing,,I will professionally write a powerful and convincing letter,,,,,True
+20230720090428,2023-07-20,content-writing/creative-writing,,I will write your personal or business letter,,,,,True
+20230720090428,2023-07-20,content-writing/creative-writing,,I will write custom erotica and bring your fantasies to life,,,,,True
+20230820145617,2023-08-20,content-writing/creative-writing,10.0,I will do research  and summary writing,,,,,False
+20230820145617,2023-08-20,content-writing/creative-writing,10.0,"I will ghostwrite a scary, horror and frightening story for you",,,,,False
+20230820145617,2023-08-20,content-writing/creative-writing,15.0,"I will turn your fanfiction into reality, nsfw accepted",,,,,False
+20230820145617,2023-08-20,content-writing/creative-writing,10.0,I will write your fanfiction idea of any genre,,,,,False
+20230820145617,2023-08-20,content-writing/creative-writing,35.0,"I will professionally write a powerful, convincing letter",,,,,False
+20230820145617,2023-08-20,content-writing/creative-writing,45.0,"I will write best selling books for amazon kindle, ebook writer, or ebook ghostwriter",,,,,False
+20230820145617,2023-08-20,content-writing/creative-writing,65.0,I will write a custom erotica piece for you,,,,,False
+20230820145617,2023-08-20,content-writing/creative-writing,100.0,I will write your video game story,,,,,False
+20230901182649,2023-09-01,content-writing/creative-writing,,"I will create your conlang, realistic fictional language",,,,,True
+20230901182649,2023-09-01,content-writing/creative-writing,,I will write any kind of letter or email,,,,,True
+20230901182649,2023-09-01,content-writing/creative-writing,,I will do research  and summary writing,,,,,True
+20230901182649,2023-09-01,content-writing/creative-writing,,I will write the best narrative storytelling for you,,,,,True
+20230901182649,2023-09-01,content-writing/creative-writing,,I will ghostwrite your amazing fantasy or science fiction piece,,,,,True
+20230901182649,2023-09-01,content-writing/creative-writing,,I will do arabic writing or arabic copywriting for SEO arabic articles or arabic blogs,,,,,True
+20230901182649,2023-09-01,content-writing/creative-writing,,"I will write best selling ebooks for amazon kindle, ebook ghostwriter, ebook writing",,,,,True
+20230901182649,2023-09-01,content-writing/creative-writing,,I will write your desired fanfiction sfw and nsfw erotica and smut accepted,,,,,True
+20231022143419,2023-10-22,content-writing/creative-writing,15.0,"I will turn your fanfiction into reality, nsfw accepted",,,,,False
+20231022143419,2023-10-22,content-writing/creative-writing,10.0,"I will write business, sales letters, and professional emails",,,,,False
+20231022143419,2023-10-22,content-writing/creative-writing,5.0,I will write high quality fanfiction for you,,,,,False
+20231022143419,2023-10-22,content-writing/creative-writing,10.0,I will write a professional and convincing letter of any kind,,,,,False
+20231022143419,2023-10-22,content-writing/creative-writing,20.0,I will provide creative and engaging writing,,,,,False
+20231022143419,2023-10-22,content-writing/creative-writing,35.0,"I will professionally write a powerful, convincing letter",,,,,False
+20231022143419,2023-10-22,content-writing/creative-writing,50.0,I will creatively and professionally write anything,,,,,False
+20231022143419,2023-10-22,content-writing/creative-writing,100.0,I will write your video game story,,,,,False
+20231222054302,2023-12-22,content-writing/creative-writing,10.0,I will write creative writing for you,,,,,False
+20231222054302,2023-12-22,content-writing/creative-writing,10.0,I will do any type of creative writing for you,,,,,False
+20231222054302,2023-12-22,content-writing/creative-writing,15.0,"I will do creative writing, content writing, articles, and other creative work",,,,,False
+20231222054302,2023-12-22,content-writing/creative-writing,5.0,I will write memorable poetry for any topic,,,,,False
+20231222054302,2023-12-22,content-writing/creative-writing,40.0,I will write erotica customized for you,,,,,False
+20231222054302,2023-12-22,content-writing/creative-writing,40.0,"I will professionally write a powerful, convincing letter",,,,,False
+20231222054302,2023-12-22,content-writing/creative-writing,50.0,I will creatively and professionally write anything,,,,,False
+20231222054302,2023-12-22,content-writing/creative-writing,195.0,"I will write poetry, stories, and creative content for you",,,,,False
+20240120182007,2024-01-20,content-writing/creative-writing,150.0,I will provide professional childrens story writing,,,,,False
+20240120182007,2024-01-20,content-writing/creative-writing,10.0,I will write the best narrative storytelling for you,,,,,False
+20240120182007,2024-01-20,content-writing/creative-writing,30.0,I will help you get a literary agent query letter synopsis book proposal,,,,,False
+20240120182007,2024-01-20,content-writing/creative-writing,150.0,I will review and refine your creative writing,,,,,False
+20240120182007,2024-01-20,content-writing/creative-writing,275.0,I will write a background story for your video game,,,,,False
+20240120182007,2024-01-20,content-writing/creative-writing,10.0,I will write personalized kinky erotic stories for you,,,,,False
+20240120182007,2024-01-20,content-writing/creative-writing,15.0,"I will write game story, worldbuilding, review or mechanics",,,,,False
+20240120182007,2024-01-20,content-writing/creative-writing,15.0,I will create an erotica story personalized for you,,,,,False
+20240201165245,2024-02-01,content-writing/creative-writing,15.0,I will write lyrics for your song,,,,,False
+20240201165245,2024-02-01,content-writing/creative-writing,10.0,"I will write character backstory, lore, world building for your novel",,,,,False
+20240201165245,2024-02-01,content-writing/creative-writing,5.0,I will write memorable poetry for any topic,,,,,False
+20240201165245,2024-02-01,content-writing/creative-writing,15.0,"I will do creative writing, content writing, articles, and other creative work",,,,,False
+20240201165245,2024-02-01,content-writing/creative-writing,20.0,I will write a creative gta rp backstory and full application,,,,,False
+20240201165245,2024-02-01,content-writing/creative-writing,20.0,"I will turn your fanfiction into reality, nsfw accepted",,,,,False
+20240201165245,2024-02-01,content-writing/creative-writing,75.0,"I will write comedy sketches, skits, scripts and stand up material",,,,,False
+20240201165245,2024-02-01,content-writing/creative-writing,150.0,I will provide professional childrens story writing,,,,,False
+20240312024002,2024-03-12,content-writing/creative-writing,5.0,"I will write a professional biography, about me, an agent bio, personal or business bio",,,,,False
+20240312024002,2024-03-12,content-writing/creative-writing,15.0,I will write lyrics for your song,,,,,False
+20240312024002,2024-03-12,content-writing/creative-writing,10.0,I will write the best narrative storytelling for you,,,,,False
+20240312024002,2024-03-12,content-writing/creative-writing,10.0,"I will write poetry, stories, and creative content for you",,,,,False
+20240312024002,2024-03-12,content-writing/creative-writing,20.0,"I will turn your fanfiction into reality, nsfw accepted",,,,,False
+20240312024002,2024-03-12,content-writing/creative-writing,30.0,I will write erotica customized for you,,,,,False
+20240312024002,2024-03-12,content-writing/creative-writing,50.0,I will creatively and professionally write anything,,,,,False
+20240312024002,2024-03-12,content-writing/creative-writing,100.0,"I will write comedy sketches, skits, scripts and stand up material",,,,,False
+20240401121628,2024-04-01,content-writing/creative-writing,5.0,I will write a handwritten letter for you,,,,,False
+20240401121628,2024-04-01,content-writing/creative-writing,10.0,I will be romance ghostwriter nsfw romance story erotica story erotic story lgbtq bdsm,,,,,False
+20240401121628,2024-04-01,content-writing/creative-writing,15.0,I will write lyrics for your song,,,,,False
+20240401121628,2024-04-01,content-writing/creative-writing,10.0,I will write the best narrative storytelling for you,,,,,False
+20240401121628,2024-04-01,content-writing/creative-writing,35.0,I will tell your story and write your storytelling content,,,,,False
+20240401121628,2024-04-01,content-writing/creative-writing,35.0,I will write original content in german,,,,,False
+20240401121628,2024-04-01,content-writing/creative-writing,50.0,I will creatively and professionally write anything,,,,,False
+20240401121628,2024-04-01,content-writing/creative-writing,100.0,I will write original comedy material,,,,,False
+20240501062226,2024-05-01,content-writing/creative-writing,5.0,,,,,,False
+20240501062226,2024-05-01,content-writing/creative-writing,15.0,,,,,,False
+20240501062226,2024-05-01,content-writing/creative-writing,10.0,,,,,,False
+20240501062226,2024-05-01,content-writing/creative-writing,15.0,,,,,,False
+20240501062226,2024-05-01,content-writing/creative-writing,40.0,,,,,,False
+20240501062226,2024-05-01,content-writing/creative-writing,20.0,,,,,,False
+20240501062226,2024-05-01,content-writing/creative-writing,95.0,,,,,,False
+20240501062226,2024-05-01,content-writing/creative-writing,100.0,,,,,,False
+20240601133254,2024-06-01,content-writing/creative-writing,15.0,,,,,,False
+20240601133254,2024-06-01,content-writing/creative-writing,15.0,,,,,,False
+20240601133254,2024-06-01,content-writing/creative-writing,10.0,,,,,,False
+20240601133254,2024-06-01,content-writing/creative-writing,15.0,,,,,,False
+20240601133254,2024-06-01,content-writing/creative-writing,25.0,,,,,,False
+20240601133254,2024-06-01,content-writing/creative-writing,35.0,,,,,,False
+20240601133254,2024-06-01,content-writing/creative-writing,50.0,,,,,,False
+20240601133254,2024-06-01,content-writing/creative-writing,100.0,,,,,,False
+20240701181836,2024-07-01,content-writing/creative-writing,5.0,,,,,,False
+20240701181836,2024-07-01,content-writing/creative-writing,5.0,,,,,,False
+20240701181836,2024-07-01,content-writing/creative-writing,15.0,,,,,,False
+20240701181836,2024-07-01,content-writing/creative-writing,15.0,,,,,,False
+20240701181836,2024-07-01,content-writing/creative-writing,30.0,,,,,,False
+20240701181836,2024-07-01,content-writing/creative-writing,35.0,,,,,,False
+20240701181836,2024-07-01,content-writing/creative-writing,50.0,,,,,,False
+20240701181836,2024-07-01,content-writing/creative-writing,100.0,,,,,,False
+20240801102524,2024-08-01,content-writing/creative-writing,10.0,,,,,,False
+20240801102524,2024-08-01,content-writing/creative-writing,10.0,,,,,,False
+20240801102524,2024-08-01,content-writing/creative-writing,15.0,,,,,,False
+20240801102524,2024-08-01,content-writing/creative-writing,15.0,,,,,,False
+20240801102524,2024-08-01,content-writing/creative-writing,40.0,,,,,,False
+20240801102524,2024-08-01,content-writing/creative-writing,35.0,,,,,,False
+20240801102524,2024-08-01,content-writing/creative-writing,95.0,,,,,,False
+20240801102524,2024-08-01,content-writing/creative-writing,100.0,,,,,,False
+20240901112639,2024-09-01,content-writing/creative-writing,5.0,,,,,,False
+20240901112639,2024-09-01,content-writing/creative-writing,15.0,,,,,,False
+20240901112639,2024-09-01,content-writing/creative-writing,15.0,,,,,,False
+20240901112639,2024-09-01,content-writing/creative-writing,15.0,,,,,,False
+20240901112639,2024-09-01,content-writing/creative-writing,30.0,,,,,,False
+20240901112639,2024-09-01,content-writing/creative-writing,40.0,,,,,,False
+20240901112639,2024-09-01,content-writing/creative-writing,55.0,,,,,,False
+20240901112639,2024-09-01,content-writing/creative-writing,135.0,,,,,,False
+20241001013828,2024-10-01,content-writing/creative-writing,10.0,,,,,,False
+20241001013828,2024-10-01,content-writing/creative-writing,15.0,,,,,,False
+20241001013828,2024-10-01,content-writing/creative-writing,10.0,,,,,,False
+20241001013828,2024-10-01,content-writing/creative-writing,15.0,,,,,,False
+20241001013828,2024-10-01,content-writing/creative-writing,35.0,,,,,,False
+20241001013828,2024-10-01,content-writing/creative-writing,40.0,,,,,,False
+20241001013828,2024-10-01,content-writing/creative-writing,50.0,,,,,,False
+20241001013828,2024-10-01,content-writing/creative-writing,100.0,,,,,,False
 20210324161056,2021-03-24,data/data-entry,10.0,"I will do data entry, data collection, internet research and admin support",preadeel,Level 2 Seller,4.9,297.0,False
 20210324161056,2021-03-24,data/data-entry,20.0,I will do excel data entry jobs,faisal283,Level 2 Seller,5.0,162.0,False
 20210324161056,2021-03-24,data/data-entry,30.0,"I will write you a program to process files in csv,  excel, or other in python pandas",vh_programs,Level 2 Seller,5.0,46.0,False
@@ -304,12 +464,10 @@ timestamp,date,category,price,title,seller,tier,rating,reviews,low_confidence
 20220503175055,2022-05-03,data/data-entry,30.0,"I will do data entry, data mining, web scraping and copy paste",mr_wajidmaster,Level 2 Seller,5.0,254.0,False
 20220503175055,2022-05-03,data/data-entry,60.0,"I will do perfect data entry, web research and copy paste",awais47,Top Rated Seller,5.0,,False
 20220503175055,2022-05-03,data/data-entry,60.0,"I will find emails, list address, excel data entry, data mining, data scraping",excel_lead,Top Rated Seller,5.0,,False
-20220503175055,2022-05-03,data/data-entry,60.0,"I will do perfect data entry, web research and copy paste",awais47,Top Rated Seller,5.0,,False
 20220503175055,2022-05-03,data/data-entry,20.0,I will help you with any data entry tasks,eemmilie,Level 1 Seller,5.0,95.0,False
 20220503175055,2022-05-03,data/data-entry,30.0,"I will be your virtual assistant for data entry, web research, excel work",rudrabiswas_nyc,Level 2 Seller,5.0,106.0,False
 20220503175055,2022-05-03,data/data-entry,35.0,"I will do data entry, data mining, web research, copy paste",awais47,Top Rated Seller,5.0,184.0,False
 20220503175055,2022-05-03,data/data-entry,15.0,"I will be your virtual assistant for data entry, typing, copy paste and web research",bdcalling,Level 2 Seller,4.9,670.0,False
-20220503175055,2022-05-03,data/data-entry,15.0,I will be your reliable data entry operator,hakim1996,Top Rated Seller,5.0,850.0,False
 20220503175055,2022-05-03,data/data-entry,5.0,"I will do excel data entry, copypaste, and any type of data entry",abrar_029,Level 2 Seller,5.0,101.0,False
 20220612150444,2022-06-12,data/data-entry,10.0,"I will do data entry, copy paste, web research and excel data entry",salahuddin072,Top Rated Seller,4.9,746.0,False
 20220612150444,2022-06-12,data/data-entry,15.0,I will be your reliable data entry operator,hakim1996,Top Rated Seller,5.0,859.0,False
@@ -363,6 +521,166 @@ timestamp,date,category,price,title,seller,tier,rating,reviews,low_confidence
 20221104052120,2022-11-04,data/data-entry,10.0,I will virtual assistant for data entry and web search,kassak7358,Level 2 Seller,4.9,224.0,False
 20221104052120,2022-11-04,data/data-entry,10.0,I will do excel data entry and web research precisely,ishtiak_14,Level 1 Seller,5.0,75.0,False
 20221104052120,2022-11-04,data/data-entry,5.0,I will be your virtual assistant for data entry and web research,rimzaazam,Level 2 Seller,5.0,118.0,False
+20230101042424,2023-01-01,data/data-entry,10.0,"I will do data entry, web research, copy paste, excel data entry, typing work",sherrymarmalate,Level 2 Seller,5.0,202.0,False
+20230101042424,2023-01-01,data/data-entry,10.0,I will be your virtual assistant for data entry and web research,chelzy19,Level 2 Seller,5.0,509.0,False
+20230101042424,2023-01-01,data/data-entry,20.0,"I will do data entry in excel, web scraping, web research, copy paste and finding email",nupurds,Top Rated Seller,4.9,404.0,False
+20230101042424,2023-01-01,data/data-entry,5.0,"I will data entry, copy paste, web scraping and excel data entry",sumiakter_77,,4.9,11.0,False
+20230101042424,2023-01-01,data/data-entry,10.0,"I will do fastest data entry excel, internet research",srabontynishu,Level 1 Seller,5.0,7.0,False
+20230101042424,2023-01-01,data/data-entry,10.0,I will do any type of data entry and website research work,siegercreations,Top Rated Seller,5.0,481.0,False
+20230101042424,2023-01-01,data/data-entry,5.0,"I will do data entry excel, word, database editing",numanunique,Level 2 Seller,5.0,713.0,False
+20230101042424,2023-01-01,data/data-entry,5.0,"I will do data entry, copy paste, web research and excel data entry",bilalzahidpk,Level 1 Seller,5.0,31.0,False
+20230203150953,2023-02-03,data/data-entry,10.0,I will be your virtual assistant for every business and personal tasks,pascaall,,4.0,4.0,False
+20230203150953,2023-02-03,data/data-entry,75.0,"I will data entry, list building, web research",florentaaliu,Level 1 Seller,4.8,14.0,False
+20230203150953,2023-02-03,data/data-entry,20.0,I will do excel data entry,umme_moriom28,Level 1 Seller,5.0,40.0,False
+20230203150953,2023-02-03,data/data-entry,20.0,I will data entry in record time,mindyfiorino,,4.9,49.0,False
+20230203150953,2023-02-03,data/data-entry,10.0,"I will be your virtual assistant for data entry, data mining, copy paste, web research",leadhunter_1,Level 2 Seller,4.9,164.0,False
+20230203150953,2023-02-03,data/data-entry,15.0,I will help with any data entry and research,karladaniela715,Top Rated Seller,5.0,12.0,False
+20230203150953,2023-02-03,data/data-entry,10.0,I will find valid business leads from linkedin sn and zoominfo,shahzaib7053,Level 1 Seller,5.0,29.0,False
+20230203150953,2023-02-03,data/data-entry,5.0,"I will do data entry, typing, copy paste, web research as a reliable virtual assistant",max_dataentry,Level 1 Seller,5.0,80.0,False
+20230301015340,2023-03-01,data/data-entry,10.0,"I will do data entry, copy paste, web research and excel data entry",salahuddin072,Top Rated Seller,4.9,,False
+20230301015340,2023-03-01,data/data-entry,15.0,I will do accurate data entry and admin tasks,karladaniela715,Top Rated Seller,5.0,182.0,False
+20230301015340,2023-03-01,data/data-entry,5.0,"I will do excel data entry, copy paste, and web research",sheilamaedacs,Level 1 Seller,4.9,32.0,False
+20230301015340,2023-03-01,data/data-entry,5.0,"I will search any market,company,email,website,address,phone number",shoaibahmed02,Level 1 Seller,5.0,421.0,False
+20230301015340,2023-03-01,data/data-entry,10.0,"I will be your virtual assistant for data entry, web research",rimjimmili,Level 2 Seller,4.9,461.0,False
+20230301015340,2023-03-01,data/data-entry,20.0,"I will leads expert, data collection, data collector and data extraction",itsahmadjaved,,2.0,2.0,False
+20230301015340,2023-03-01,data/data-entry,5.0,"I will do data entry, web research, copy paste and excel data entry",akhtarhussain21,Level 2 Seller,5.0,249.0,False
+20230301015340,2023-03-01,data/data-entry,5.0,"I will do data entry, data mining, web scraping, and web research",sohag37,Level 2 Seller,5.0,257.0,False
+20230402163423,2023-04-02,data/data-entry,5.0,"I will do microsoft word document formatting, creating and editing",dheelaka23,Level 2 Seller,5.0,100.0,False
+20230402163423,2023-04-02,data/data-entry,5.0,"I will provide all your excel needs, pro excel formulas retype docs",misterhmza,Level 2 Seller,5.0,34.0,False
+20230402163423,2023-04-02,data/data-entry,60.0,I will tesis de grado e investigaciones,joseluis1970,Level 1 Seller,5.0,5.0,False
+20230402163423,2023-04-02,data/data-entry,5.0,"I will precisely annotate images, videos and maps for your ai model",njaumoses,Level 2 Seller,5.0,151.0,False
+20230402163423,2023-04-02,data/data-entry,10.0,"I will be your virtual assistant for data entry, web research",ahmeedsafwat9,Level 2 Seller,5.0,24.0,False
+20230402163423,2023-04-02,data/data-entry,10.0,"I will do data entry, copy paste, web research and excel data entry",salahuddin072,Top Rated Seller,4.9,,False
+20230402163423,2023-04-02,data/data-entry,5.0,I will do product entry wordpress data entry and content upload,kirnuism,Level 2 Seller,4.9,93.0,False
+20230402163423,2023-04-02,data/data-entry,5.0,"I will search any market,company,email,website,address,phone number",shoaibahmed02,,5.0,441.0,False
+20230515095939,2023-05-15,data/data-entry,5.0,"I will do web research,data entry any business email finding",,,,,False
+20230515095939,2023-05-15,data/data-entry,5.0,"I will edit,format,redesign a pdf document microsoft ms word document",,,,,False
+20230515095939,2023-05-15,data/data-entry,5.0,"I will do image annotation, data labeling, bounding box, text tagging for ml,ai model",,,,,False
+20230515095939,2023-05-15,data/data-entry,20.0,"I will do excel data entry, copy paste, web scraping, web research, and finding email",,,,,False
+20230515095939,2023-05-15,data/data-entry,10.0,"I will do excel data entry, contact list ,data collection, copy paste, web research",,,,,False
+20230515095939,2023-05-15,data/data-entry,15.0,I will do data entry and web research for your business,,,,,False
+20230515095939,2023-05-15,data/data-entry,5.0,"I will tag, annotate and label your images to bring ai to life",,,,,False
+20230515095939,2023-05-15,data/data-entry,10.0,"I will do accurate data entry, copy paste, web scrap, PDF to excel",,,,,False
+20230603222525,2023-06-03,data/data-entry,20.0,"I will efficient data entry, web research, scraping, lead generation work",,,,,False
+20230603222525,2023-06-03,data/data-entry,10.0,"I will do excel data entry, web research, online data entry, copy paste work",,,,,False
+20230603222525,2023-06-03,data/data-entry,5.0,"I will do data entry, data collection, web research and copy paste job for you",,,,,False
+20230603222525,2023-06-03,data/data-entry,5.0,"I will edit,format,redesign a pdf document microsoft ms word document",,,,,False
+20230603222525,2023-06-03,data/data-entry,10.0,I will do perfect economic business essays research case study management,,,,,False
+20230603222525,2023-06-03,data/data-entry,10.0,"I will do excel data entry, copy paste, typing, web research",,,,,False
+20230603222525,2023-06-03,data/data-entry,5.0,"I will do property search, title report, chain of title report",,,,,False
+20230603222525,2023-06-03,data/data-entry,40.0,I will research speaking events and conferences for any topic,,,,,False
+20230720093930,2023-07-20,data/data-entry,,"I will be your virtual assistant for data entry, typing, copy paste and web research",,,,,True
+20230720093930,2023-07-20,data/data-entry,,"I will do excel data entry, web research, online data entry, copy paste work",,,,,True
+20230720093930,2023-07-20,data/data-entry,,"I will do data entry, web scraping, excel, typing, copy paste work",,,,,True
+20230720093930,2023-07-20,data/data-entry,,"I will do excel data entry, merge, cleanup, vlookup, advance excel, excel formulas",,,,,True
+20230720093930,2023-07-20,data/data-entry,,"I will data entry, manual data entry typing work, convert PDF to word, data collection",,,,,True
+20230720093930,2023-07-20,data/data-entry,,I will provide real estate property title search and surplus funds all over the USA,,,,,True
+20230720093930,2023-07-20,data/data-entry,,"I will do property search, title report, chain of title report",,,,,True
+20230720093930,2023-07-20,data/data-entry,,"I will do excel data entry, web research, copy paste, typing, PDF to excel, email find",,,,,True
+20230820152748,2023-08-20,data/data-entry,30.0,I will activate your old user linkedin sales navigator,,,,,False
+20230820152748,2023-08-20,data/data-entry,10.0,"I will design, format, edit word, excel, powerpoint presentation and pdf files",,,,,False
+20230820152748,2023-08-20,data/data-entry,10.0,"I will do data entry, web research, excel data entry, typing, copy paste",,,,,False
+20230820152748,2023-08-20,data/data-entry,10.0,"I will do real estate property title search, the chain of title report with all deeds",,,,,False
+20230820152748,2023-08-20,data/data-entry,25.0,I will active linkedin sales navigator account for sales leads,,,,,False
+20230820152748,2023-08-20,data/data-entry,10.0,I will do perfect zillow scraping for real estate within 24 hours,,,,,False
+20230820152748,2023-08-20,data/data-entry,5.0,"I will take screenshot from website, pdf, video clips and many more",,,,,False
+20230820152748,2023-08-20,data/data-entry,10.0,I will be your virtual assistant for data entry and web research,,,,,False
+20230902200435,2023-09-02,data/data-entry,15.0,I will do b2b targeted lead generation using apollo and zoominfo and linkedin,,,,,False
+20230902200435,2023-09-02,data/data-entry,15.0,I will do lead generation data entry,,,,,False
+20230902200435,2023-09-02,data/data-entry,10.0,I will do perfect zillow scraping for real estate within 24 hours,,,,,False
+20230902200435,2023-09-02,data/data-entry,5.0,"I will be virtual assistant of data entry, excel data cleaning, email finding",,,,,False
+20230902200435,2023-09-02,data/data-entry,5.0,"I will redesign, format a pdf document microsoft ms word document",,,,,False
+20230902200435,2023-09-02,data/data-entry,5.0,I will provide real estate property title search and surplus funds all over the USA,,,,,False
+20230902200435,2023-09-02,data/data-entry,5.0,"I will do data entry, scraping and copy paste work",,,,,False
+20230902200435,2023-09-02,data/data-entry,25.0,I will active linkedin sales navigator account for sales leads,,,,,False
+20231222073120,2023-12-22,data/data-entry,25.0,"I will do data entry, copy paste, web research as your VA",,,,,False
+20231222073120,2023-12-22,data/data-entry,20.0,"I will do data entry, online research, copy paste, and web scraping",,,,,False
+20231222073120,2023-12-22,data/data-entry,20.0,"I will do excel data entry, copy paste, web scraping, pdf to excel and finding email",,,,,False
+20231222073120,2023-12-22,data/data-entry,20.0,"I will be your virtual assistant for data entry, copy paste, typing and web research",,,,,False
+20231222073120,2023-12-22,data/data-entry,20.0,"I will do quality data entry, web research and lead generation task",,,,,False
+20231222073120,2023-12-22,data/data-entry,20.0,I will find any type of images and photos for you,,,,,False
+20231222073120,2023-12-22,data/data-entry,20.0,"I will do data entry, copy paste, web research, excel data entry, pdf to excel",,,,,False
+20231222073120,2023-12-22,data/data-entry,5.0,"I will do accurate data entry, copy paste, web research, excel data entry in 24 hours",,,,,False
+20240130153154,2024-01-30,data/data-entry,20.0,"I will do lead generation, data entry and web research",,,,,False
+20240130153154,2024-01-30,data/data-entry,20.0,"I will do data entry, web research, find business email and business contacts",,,,,False
+20240130153154,2024-01-30,data/data-entry,20.0,"I will do data entry, copy paste, excel data entry, convert PDF, web research",,,,,False
+20240130153154,2024-01-30,data/data-entry,20.0,"I will be your virtual assistant of any data entry, copy paste, web research, typing",,,,,False
+20240130153154,2024-01-30,data/data-entry,20.0,"I will do excel data entry, web scraping, mining, listing, or finding email addresses",,,,,False
+20240130153154,2024-01-30,data/data-entry,20.0,"I will do data entry, data mining, web research, copy paste and excel data entry jobs",,,,,False
+20240130153154,2024-01-30,data/data-entry,20.0,"I will do fast and accurate data entry, copy paste and web research",,,,,False
+20240130153154,2024-01-30,data/data-entry,20.0,I will be your microsoft word expert for creating ms word documents,,,,,False
+20240201165851,2024-02-01,data/data-entry,20.0,"I will do data entry, data mining, web research, copy paste and excel data entry jobs",,,,,False
+20240201165851,2024-02-01,data/data-entry,20.0,"I will do excel data entry, web scraping, mining, listing, or finding email addresses",,,,,False
+20240201165851,2024-02-01,data/data-entry,20.0,"I will be your virtual assistant of any data entry, copy paste, web research, typing",,,,,False
+20240201165851,2024-02-01,data/data-entry,20.0,"I will do lead generation, data entry and web research",,,,,False
+20240201165851,2024-02-01,data/data-entry,20.0,"I will do data entry, web research, find business email and business contacts",,,,,False
+20240201165851,2024-02-01,data/data-entry,20.0,"I will do data entry, copy paste, web research, excel data entry, pdf to excel",,,,,False
+20240201165851,2024-02-01,data/data-entry,20.0,"I will do data entry, copy paste, excel data entry, convert PDF, web research",,,,,False
+20240201165851,2024-02-01,data/data-entry,20.0,"I will do excel data entry and web research, admin support, emails",,,,,False
+20240312024643,2024-03-12,data/data-entry,20.0,"I will do web scraping, web scraper, data entry, and data mining in 12 hours",,,,,False
+20240312024643,2024-03-12,data/data-entry,25.0,I will make google accounts for you,,,,,False
+20240312024643,2024-03-12,data/data-entry,20.0,"I will be virtual assistant of data entry, excel data cleaning, email finding",,,,,False
+20240312024643,2024-03-12,data/data-entry,20.0,"I will serve as your virtual assistant for canva, data entry, data mining, copy paste",,,,,False
+20240312024643,2024-03-12,data/data-entry,20.0,"I will take screenshot from website, pdf, video clips and many more",,,,,False
+20240312024643,2024-03-12,data/data-entry,20.0,"I will do data entry, copy paste, web research, excel data entry, pdf to excel",,,,,False
+20240312024643,2024-03-12,data/data-entry,20.0,"I will be your personal virtual assistant, data entry expert",,,,,False
+20240312024643,2024-03-12,data/data-entry,5.0,I will do fast any data entry accurately for you,,,,,False
+20240401122251,2024-04-01,data/data-entry,20.0,"I will do excel data entry, copy paste, web scraping, pdf to excel and finding email",,,,,False
+20240401122251,2024-04-01,data/data-entry,20.0,"I will do web scraping, web scraper, data entry, and data mining in 12 hours",,,,,False
+20240401122251,2024-04-01,data/data-entry,20.0,"I will do data entry, data collection, web research and copy paste jobs for you",,,,,False
+20240401122251,2024-04-01,data/data-entry,5.0,I will do fast any data entry accurately for you,,,,,False
+20240401122251,2024-04-01,data/data-entry,20.0,"I will do data entry, web research, excel data cleaning, copy paste",,,,,False
+20240401122251,2024-04-01,data/data-entry,20.0,"I will do data entry, copy paste, excel data entry, convert PDF, web research",,,,,False
+20240401122251,2024-04-01,data/data-entry,20.0,I will do data entry typing work and admin work,,,,,False
+20240401122251,2024-04-01,data/data-entry,5.0,"I will do accurate data entry, copy paste, web research, excel data entry in 24 hours",,,,,False
+20240501062732,2024-05-01,data/data-entry,20.0,,,,,,False
+20240501062732,2024-05-01,data/data-entry,20.0,,,,,,False
+20240501062732,2024-05-01,data/data-entry,5.0,,,,,,False
+20240501062732,2024-05-01,data/data-entry,5.0,,,,,,False
+20240501062732,2024-05-01,data/data-entry,20.0,,,,,,False
+20240501062732,2024-05-01,data/data-entry,20.0,,,,,,False
+20240501062732,2024-05-01,data/data-entry,20.0,,,,,,False
+20240501062732,2024-05-01,data/data-entry,20.0,,,,,,False
+20240601133930,2024-06-01,data/data-entry,5.0,,,,,,False
+20240601133930,2024-06-01,data/data-entry,20.0,,,,,,False
+20240601133930,2024-06-01,data/data-entry,20.0,,,,,,False
+20240601133930,2024-06-01,data/data-entry,20.0,,,,,,False
+20240601133930,2024-06-01,data/data-entry,20.0,,,,,,False
+20240601133930,2024-06-01,data/data-entry,20.0,,,,,,False
+20240601133930,2024-06-01,data/data-entry,20.0,,,,,,False
+20240601133930,2024-06-01,data/data-entry,20.0,,,,,,False
+20240701182622,2024-07-01,data/data-entry,5.0,,,,,,False
+20240701182622,2024-07-01,data/data-entry,20.0,,,,,,False
+20240701182622,2024-07-01,data/data-entry,20.0,,,,,,False
+20240701182622,2024-07-01,data/data-entry,20.0,,,,,,False
+20240701182622,2024-07-01,data/data-entry,5.0,,,,,,False
+20240701182622,2024-07-01,data/data-entry,20.0,,,,,,False
+20240701182622,2024-07-01,data/data-entry,20.0,,,,,,False
+20240701182622,2024-07-01,data/data-entry,20.0,,,,,,False
+20240801103214,2024-08-01,data/data-entry,20.0,,,,,,False
+20240801103214,2024-08-01,data/data-entry,20.0,,,,,,False
+20240801103214,2024-08-01,data/data-entry,5.0,,,,,,False
+20240801103214,2024-08-01,data/data-entry,30.0,,,,,,False
+20240801103214,2024-08-01,data/data-entry,20.0,,,,,,False
+20240801103214,2024-08-01,data/data-entry,20.0,,,,,,False
+20240801103214,2024-08-01,data/data-entry,20.0,,,,,,False
+20240801103214,2024-08-01,data/data-entry,20.0,,,,,,False
+20240901113451,2024-09-01,data/data-entry,20.0,,,,,,False
+20240901113451,2024-09-01,data/data-entry,20.0,,,,,,False
+20240901113451,2024-09-01,data/data-entry,20.0,,,,,,False
+20240901113451,2024-09-01,data/data-entry,5.0,,,,,,False
+20240901113451,2024-09-01,data/data-entry,20.0,,,,,,False
+20240901113451,2024-09-01,data/data-entry,20.0,,,,,,False
+20240901113451,2024-09-01,data/data-entry,20.0,,,,,,False
+20240901113451,2024-09-01,data/data-entry,45.0,,,,,,False
+20241001014619,2024-10-01,data/data-entry,5.0,,,,,,False
+20241001014619,2024-10-01,data/data-entry,20.0,,,,,,False
+20241001014619,2024-10-01,data/data-entry,20.0,,,,,,False
+20241001014619,2024-10-01,data/data-entry,20.0,,,,,,False
+20241001014619,2024-10-01,data/data-entry,20.0,,,,,,False
+20241001014619,2024-10-01,data/data-entry,20.0,,,,,,False
+20241001014619,2024-10-01,data/data-entry,20.0,,,,,,False
+20241001014619,2024-10-01,data/data-entry,20.0,,,,,,False
 20210501075411,2021-05-01,graphics-design/creative-logo-design,10.0,I will design 3 modern minimalist logo design,design_desk,Level 2 Seller,4.9,,False
 20210501075411,2021-05-01,graphics-design/creative-logo-design,10.0,I will create a flat minimalist logo design,mountdesign,Level 2 Seller,4.9,,False
 20210501075411,2021-05-01,graphics-design/creative-logo-design,30.0,I will do minimalist modern and business logo design,studioawest,Level 2 Seller,4.9,,False
@@ -412,9 +730,7 @@ timestamp,date,category,price,title,seller,tier,rating,reviews,low_confidence
 20220402170912,2022-04-02,graphics-design/creative-logo-design,45.0,I will design a professional and high quality logo,nichole_rose,Top Rated Seller,4.9,,False
 20220402170912,2022-04-02,graphics-design/creative-logo-design,255.0,I will design a complete signature branding kit for you,shabeena90,Level 2 Seller,5.0,111.0,False
 20220402170912,2022-04-02,graphics-design/creative-logo-design,100.0,Our studio will design a minimalist unique company logo and stationery,Graphic Empire,,4.8,28.0,False
-20220402170912,2022-04-02,graphics-design/creative-logo-design,45.0,I will create modern minimalist and luxury logo design,harshas,Level 2 Seller,4.9,,False
 20220402170912,2022-04-02,graphics-design/creative-logo-design,110.0,I will design creative and minimalist negative space logo,loftydesignshop,Level 2 Seller,4.8,,False
-20220402170912,2022-04-02,graphics-design/creative-logo-design,45.0,I will design clever monogram logo,hello_friday,Top Rated Seller,4.9,,False
 20220609153355,2022-06-09,graphics-design/creative-logo-design,25.0,I will make professional logo design,scorpion6,Top Rated Seller,4.9,,False
 20220609153355,2022-06-09,graphics-design/creative-logo-design,30.0,I will design logo for your business with unlimited revisions,zera93,Top Rated Seller,5.0,,False
 20220609153355,2022-06-09,graphics-design/creative-logo-design,80.0,I will design creative logo with all files in 72h,skydesigner,Top Rated Seller,4.9,,False
@@ -543,7 +859,6 @@ timestamp,date,category,price,title,seller,tier,rating,reviews,low_confidence
 20230706112800,2023-07-06,graphics-design/creative-logo-design,,I will create a modern minimalist logo design,,,,,True
 20230706112800,2023-07-06,graphics-design/creative-logo-design,,I will redesign edit or update your logo creatively,,,,,True
 20230706112800,2023-07-06,graphics-design/creative-logo-design,,I will do business minimalist logo design,,,,,True
-20230706112800,2023-07-06,graphics-design/creative-logo-design,,I will do 3 modern minimalist logo design for your business,,,,,True
 20230706112800,2023-07-06,graphics-design/creative-logo-design,,I will do 3 modern minimalist logo design for your business,,,,,True
 20230706112800,2023-07-06,graphics-design/creative-logo-design,,I will create modern minimalist logo design for your business,,,,,True
 20230706112800,2023-07-06,graphics-design/creative-logo-design,,I will professional unique logo design within 24hrs,,,,,True
@@ -787,6 +1102,30 @@ timestamp,date,category,price,title,seller,tier,rating,reviews,low_confidence
 20220701015728,2022-07-01,graphics-design/social-media-design,125.0,I will design scroll stopping social media images,nickneff55,Level 2 Seller,5.0,205.0,False
 20220701015728,2022-07-01,graphics-design/social-media-design,10.0,I will do professional instagram post and social media post design,artronny,Level 2 Seller,4.9,193.0,False
 20220701015728,2022-07-01,graphics-design/social-media-design,100.0,"I will create unique social media banners, posts, and ads",vladymyr_kytsia,,5.0,12.0,False
+20230101031808,2023-01-01,graphics-design/social-media-design,10.0,I will design a brand new youtube banner and logo in 24 hours,brand_new_art,Level 2 Seller,4.9,205.0,False
+20230101031808,2023-01-01,graphics-design/social-media-design,20.0,I will design an ultimate gaming banner for youtube twitch twitter,rvdesigner,Level 2 Seller,4.9,,False
+20230101031808,2023-01-01,graphics-design/social-media-design,50.0,I will create customs inspirational image quotes,luisfuenmayor,Top Rated Seller,5.0,959.0,False
+20230101031808,2023-01-01,graphics-design/social-media-design,10.0,I will design amazing clickbait youtube thumbnail in 2 hours,vanogre,Level 2 Seller,5.0,,False
+20230101031808,2023-01-01,graphics-design/social-media-design,20.0,I will create unique facebook cover design,emyteck,Level 2 Seller,5.0,585.0,False
+20230101031808,2023-01-01,graphics-design/social-media-design,75.0,I will create 30 unique social media posts designs for whole month,shahbazafzal,Level 1 Seller,4.9,538.0,False
+20230101031808,2023-01-01,graphics-design/social-media-design,45.0,"I will design facebook cover, social media headers",mysellertop,Top Rated Seller,5.0,,False
+20230101031808,2023-01-01,graphics-design/social-media-design,15.0,I will design an outstanding youtube banner in 24 hours,techyvishal15,Level 2 Seller,5.0,,False
+20230203144010,2023-02-03,graphics-design/social-media-design,5.0,I will design anime thumbnails that attracts viewers,tousif_ahmed6,Level 2 Seller,5.0,,False
+20230203144010,2023-02-03,graphics-design/social-media-design,5.0,I will design attractive eye catchy youtube thumbnail,designmaster099,Level 2 Seller,5.0,759.0,False
+20230203144010,2023-02-03,graphics-design/social-media-design,40.0,I will design outstanding channel art youtube banner,nael005,Level 2 Seller,5.0,960.0,False
+20230203144010,2023-02-03,graphics-design/social-media-design,30.0,"I will design 30 social media posts, social media post design",grafixmall,Level 2 Seller,4.9,184.0,False
+20230203144010,2023-02-03,graphics-design/social-media-design,35.0,I will design social media covers and social media banners,ahmedtrd,Level 2 Seller,4.9,717.0,False
+20230203144010,2023-02-03,graphics-design/social-media-design,5.0,"I will design social media post, instagram post, facebook post ads fb ads, banner ads",almomen980,Level 2 Seller,5.0,223.0,False
+20230203144010,2023-02-03,graphics-design/social-media-design,60.0,I will design editable canva templates and instagram post design for an attractive feed,sarafarahat,Level 2 Seller,4.9,136.0,False
+20230203144010,2023-02-03,graphics-design/social-media-design,50.0,I will create customs inspirational image quotes,luisfuenmayor,Top Rated Seller,5.0,962.0,False
+20230301011627,2023-03-01,graphics-design/social-media-design,50.0,"I will design a killer twitter header, facebook cover or banner",twistedweb123,Top Rated Seller,4.9,,False
+20230301011627,2023-03-01,graphics-design/social-media-design,75.0,I will design amazing instagram and facebook post graphics,wiktoriahyde,Level 2 Seller,5.0,118.0,False
+20230301011627,2023-03-01,graphics-design/social-media-design,5.0,"I will design attractive, creative carousel infographics posts for your instagram",kaushalhirpara,Level 2 Seller,5.0,252.0,False
+20230301011627,2023-03-01,graphics-design/social-media-design,35.0,I will create and design your instagram content,himplsherstudio,Level 2 Seller,4.9,108.0,False
+20230301011627,2023-03-01,graphics-design/social-media-design,15.0,I will design creative instagram facebook post design,designer_daviid,Top Rated Seller,5.0,582.0,False
+20230301011627,2023-03-01,graphics-design/social-media-design,25.0,"I will do creative social media design, post, banner ads",designer_daviid,Top Rated Seller,5.0,,False
+20230301011627,2023-03-01,graphics-design/social-media-design,5.0,I will design viral youtube thumbnail in 24 hours,designowl,Level 2 Seller,5.0,,False
+20230301011627,2023-03-01,graphics-design/social-media-design,25.0,"I will design professional social media post design, instagram post",jigraphicexpert,Level 2 Seller,4.9,701.0,False
 20230402153152,2023-04-02,graphics-design/social-media-design,10.0,I will draw a cartoon gaming banner and pfp for youtube,himoltstudio,Level 2 Seller,4.9,135.0,False
 20230402153152,2023-04-02,graphics-design/social-media-design,10.0,I will make view boosting youtube thumbnail in 3hrs,thumbnails_ayan,Level 2 Seller,5.0,,False
 20230402153152,2023-04-02,graphics-design/social-media-design,5.0,I will design amazing youtube thumbnail,abdelfatah7,Level 2 Seller,4.9,,False
@@ -795,3 +1134,147 @@ timestamp,date,category,price,title,seller,tier,rating,reviews,low_confidence
 20230402153152,2023-04-02,graphics-design/social-media-design,35.0,I will design a perfect youtube banner,twto_tv,Top Rated Seller,4.9,,False
 20230402153152,2023-04-02,graphics-design/social-media-design,25.0,I will design an epic unique youtube banner and logo,jartwork,Level 2 Seller,4.9,893.0,False
 20230402153152,2023-04-02,graphics-design/social-media-design,55.0,I will design an outstanding  youtube banner,hightlink,Top Rated Seller,5.0,,False
+20230508043614,2023-05-08,graphics-design/social-media-design,10.0,I will design an eye catching youtube banner and logo,,,,,False
+20230508043614,2023-05-08,graphics-design/social-media-design,10.0,I will make view boosting youtube thumbnail in 3hrs,,,,,False
+20230508043614,2023-05-08,graphics-design/social-media-design,15.0,I will design a professional youtube logo and banner,,,,,False
+20230508043614,2023-05-08,graphics-design/social-media-design,5.0,I will design amazing youtube thumbnail in 3 hours,,,,,False
+20230508043614,2023-05-08,graphics-design/social-media-design,20.0,I will design youtube channel art banner and channel logo,,,,,False
+20230508043614,2023-05-08,graphics-design/social-media-design,30.0,I will design an eye catching youtube banner and logo,,,,,False
+20230508043614,2023-05-08,graphics-design/social-media-design,40.0,I will design a sermon series graphic or title,,,,,False
+20230508043614,2023-05-08,graphics-design/social-media-design,50.0,"I will design linkedin banner, cover, header",,,,,False
+20230602223459,2023-06-02,graphics-design/social-media-design,10.0,I will create youtube thumbnail with amazing quality in 2 hours,,,,,False
+20230602223459,2023-06-02,graphics-design/social-media-design,15.0,I will design catchy youtube thumbnail,,,,,False
+20230602223459,2023-06-02,graphics-design/social-media-design,10.0,I will make view boosting youtube thumbnail in 3hrs plus free consultancy to grow fast,,,,,False
+20230602223459,2023-06-02,graphics-design/social-media-design,5.0,I will design attractive eye catchy youtube thumbnail,,,,,False
+20230602223459,2023-06-02,graphics-design/social-media-design,20.0,I will design the perfect youtube banner in 1 hour,,,,,False
+20230602223459,2023-06-02,graphics-design/social-media-design,25.0,I will design an epic unique youtube banner and logo,,,,,False
+20230602223459,2023-06-02,graphics-design/social-media-design,20.0,I will design a professional youtube banner and profile picture,,,,,False
+20230602223459,2023-06-02,graphics-design/social-media-design,55.0,I will design professional hebrew social media posts,,,,,False
+20230711063212,2023-07-11,graphics-design/social-media-design,10.0,I will create youtube thumbnail with amazing quality in 2 hours,,,,,False
+20230711063212,2023-07-11,graphics-design/social-media-design,5.0,I will create google meet and zoom virtual background,,,,,False
+20230711063212,2023-07-11,graphics-design/social-media-design,10.0,I will design an amazing insta and fb social media flyer in 24 hrs,,,,,False
+20230711063212,2023-07-11,graphics-design/social-media-design,10.0,I will make view boosting youtube thumbnail in 3hrs plus free consultancy to grow fast,,,,,False
+20230711063212,2023-07-11,graphics-design/social-media-design,35.0,I will design a premium youtube thumbnail design,,,,,False
+20230711063212,2023-07-11,graphics-design/social-media-design,30.0,I will design fully customized zoom virtual background,,,,,False
+20230711063212,2023-07-11,graphics-design/social-media-design,25.0,I will create design professional banner youtube,,,,,False
+20230711063212,2023-07-11,graphics-design/social-media-design,55.0,"I will create custom, professional social media templates",,,,,False
+20230817143238,2023-08-17,graphics-design/social-media-design,10.0,I will make view boosting youtube thumbnail in 3hrs plus free consultancy to grow fast,,,,,False
+20230817143238,2023-08-17,graphics-design/social-media-design,10.0,I will create youtube thumbnail with amazing quality in 2 hours,,,,,False
+20230817143238,2023-08-17,graphics-design/social-media-design,10.0,I will make a professional roblox thumbnail,,,,,False
+20230817143238,2023-08-17,graphics-design/social-media-design,15.0,I will design a premium youtube banner,,,,,False
+20230817143238,2023-08-17,graphics-design/social-media-design,30.0,I will design fully customized zoom virtual background,,,,,False
+20230817143238,2023-08-17,graphics-design/social-media-design,25.0,I will draw cartoon youtube thumbnail,,,,,False
+20230817143238,2023-08-17,graphics-design/social-media-design,25.0,"I will do facebook, twitter, linkedin, youtube, instagram banner",,,,,False
+20230817143238,2023-08-17,graphics-design/social-media-design,55.0,"I will create custom, professional social media templates",,,,,False
+20230901220219,2023-09-01,graphics-design/social-media-design,10.0,I will make view boosting youtube thumbnail in 3hrs plus free consultancy to grow fast,,,,,False
+20230901220219,2023-09-01,graphics-design/social-media-design,10.0,I will create youtube thumbnail with amazing quality in 2 hours,,,,,False
+20230901220219,2023-09-01,graphics-design/social-media-design,15.0,I will design a professional youtube logo and banner,,,,,False
+20230901220219,2023-09-01,graphics-design/social-media-design,10.0,I will design viral clickbait youtube thumbnail within 1 hour,,,,,False
+20230901220219,2023-09-01,graphics-design/social-media-design,20.0,I will design view boosting youtube thumbnail in 24hrs,,,,,False
+20230901220219,2023-09-01,graphics-design/social-media-design,25.0,I will design an outstanding youtube banner and logo,,,,,False
+20230901220219,2023-09-01,graphics-design/social-media-design,20.0,I will design amazing youtube thumbnail in 3 hours,,,,,False
+20230901220219,2023-09-01,graphics-design/social-media-design,50.0,I will design an amazing and unique steam artwork for your profile,,,,,False
+20231009034750,2023-10-09,graphics-design/social-media-design,10.0,I will make view boosting youtube thumbnail in 3hrs plus free consultancy to grow fast,,,,,False
+20231009034750,2023-10-09,graphics-design/social-media-design,15.0,I will design you professional youtube thumbnails,,,,,False
+20231009034750,2023-10-09,graphics-design/social-media-design,15.0,I will design catchy youtube thumbnail,,,,,False
+20231009034750,2023-10-09,graphics-design/social-media-design,15.0,I will desingn an eye catching youtube banner and logo,,,,,False
+20231009034750,2023-10-09,graphics-design/social-media-design,25.0,I will design professional youtube banner for you,,,,,False
+20231009034750,2023-10-09,graphics-design/social-media-design,45.0,I will make custom steam gog capsule design for your game,,,,,False
+20231009034750,2023-10-09,graphics-design/social-media-design,20.0,I will setup perfect youtube channel with branding and seo,,,,,False
+20231009034750,2023-10-09,graphics-design/social-media-design,50.0,I will make you a great youtube thumbnail,,,,,False
+20231222051016,2023-12-22,graphics-design/social-media-design,5.0,I will design the best youtube thumbnail,,,,,False
+20231222051016,2023-12-22,graphics-design/social-media-design,10.0,I will make a professional minecraft thumbnail,,,,,False
+20231222051016,2023-12-22,graphics-design/social-media-design,5.0,I will design high quality youtube gaming thumbnail,,,,,False
+20231222051016,2023-12-22,graphics-design/social-media-design,10.0,I will design custom 3d fortnite thumbnail,,,,,False
+20231222051016,2023-12-22,graphics-design/social-media-design,20.0,I will design facebook ad creatives,,,,,False
+20231222051016,2023-12-22,graphics-design/social-media-design,25.0,I will create 30 unique social media posts designs,,,,,False
+20231222051016,2023-12-22,graphics-design/social-media-design,30.0,"I will design a professional youtube banner and icon, channel art",,,,,False
+20231222051016,2023-12-22,graphics-design/social-media-design,50.0,I will create an instagram and facebook ar filter for you,,,,,False
+20240112010049,2024-01-12,graphics-design/social-media-design,5.0,I will design attractive clickbait amazing youtube thumbnail  in 3hr,,,,,False
+20240112010049,2024-01-12,graphics-design/social-media-design,5.0,I will design attractive eye catchy youtube thumbnail,,,,,False
+20240112010049,2024-01-12,graphics-design/social-media-design,15.0,I will design creative instagram facebook post design,,,,,False
+20240112010049,2024-01-12,graphics-design/social-media-design,15.0,I will desing you a amazing 3d fortnite thumbnail,,,,,False
+20240112010049,2024-01-12,graphics-design/social-media-design,20.0,I will design amazing youtube thumbnail in 3 hours,,,,,False
+20240112010049,2024-01-12,graphics-design/social-media-design,20.0,I will design high converting facebook ads,,,,,False
+20240112010049,2024-01-12,graphics-design/social-media-design,20.0,I will design linkedin banner for your business page or profile,,,,,False
+20240112010049,2024-01-12,graphics-design/social-media-design,60.0,I will make you a great youtube thumbnail,,,,,False
+20240201164844,2024-02-01,graphics-design/social-media-design,15.0,I will desing you a amazing 3d fortnite thumbnail,,,,,False
+20240201164844,2024-02-01,graphics-design/social-media-design,5.0,I will design attractive eye catchy youtube thumbnail,,,,,False
+20240201164844,2024-02-01,graphics-design/social-media-design,5.0,I will create youtube thumbnails design,,,,,False
+20240201164844,2024-02-01,graphics-design/social-media-design,10.0,I will design attractive clickbait amazing youtube thumbnail  in 3hr,,,,,False
+20240201164844,2024-02-01,graphics-design/social-media-design,25.0,I will design professional youtube banner for you,,,,,False
+20240201164844,2024-02-01,graphics-design/social-media-design,20.0,"I will do youtube banner, facebook, twitter cover, web banners, logo",,,,,False
+20240201164844,2024-02-01,graphics-design/social-media-design,20.0,I will design linkedin banner for your business page or profile,,,,,False
+20240201164844,2024-02-01,graphics-design/social-media-design,50.0,I will design an amazing and unique steam artwork for your profile,,,,,False
+20240312023519,2024-03-12,graphics-design/social-media-design,10.0,I will create youtube thumbnail with amazing quality in 2 hours,,,,,False
+20240312023519,2024-03-12,graphics-design/social-media-design,15.0,I will design amazing youtube thumbnail,,,,,False
+20240312023519,2024-03-12,graphics-design/social-media-design,15.0,I will design catchy youtube thumbnail,,,,,False
+20240312023519,2024-03-12,graphics-design/social-media-design,15.0,"I will do youtube banner, facebook, twitter cover, web banners, logo",,,,,False
+20240312023519,2024-03-12,graphics-design/social-media-design,20.0,I will design linkedin banner for your business page or profile,,,,,False
+20240312023519,2024-03-12,graphics-design/social-media-design,25.0,"I will create discord  animated icon, server banner, channel banners",,,,,False
+20240312023519,2024-03-12,graphics-design/social-media-design,25.0,I will create 10 attractive facebook and instagram post designs,,,,,False
+20240312023519,2024-03-12,graphics-design/social-media-design,85.0,I will design personalized custom zoom virtual backgrounds in 3d,,,,,False
+20240401121208,2024-04-01,graphics-design/social-media-design,10.0,I will create funny nft and crypto memes and nft meme videos,,,,,False
+20240401121208,2024-04-01,graphics-design/social-media-design,10.0,I will create youtube thumbnail with amazing quality in 2 hours,,,,,False
+20240401121208,2024-04-01,graphics-design/social-media-design,5.0,I will design a high quality gaming thumbnail for youtube,,,,,False
+20240401121208,2024-04-01,graphics-design/social-media-design,5.0,I will design the best youtube thumbnail,,,,,False
+20240401121208,2024-04-01,graphics-design/social-media-design,20.0,I will desing you a amazing 3d fortnite thumbnail,,,,,False
+20240401121208,2024-04-01,graphics-design/social-media-design,25.0,I will setup perfect youtube channel with branding and seo,,,,,False
+20240401121208,2024-04-01,graphics-design/social-media-design,30.0,I will design professional youtube banner for you,,,,,False
+20240401121208,2024-04-01,graphics-design/social-media-design,60.0,I will make you a great youtube thumbnail,,,,,False
+20240501061832,2024-05-01,graphics-design/social-media-design,10.0,,,,,,False
+20240501061832,2024-05-01,graphics-design/social-media-design,10.0,,,,,,False
+20240501061832,2024-05-01,graphics-design/social-media-design,15.0,,,,,,False
+20240501061832,2024-05-01,graphics-design/social-media-design,15.0,,,,,,False
+20240501061832,2024-05-01,graphics-design/social-media-design,20.0,,,,,,False
+20240501061832,2024-05-01,graphics-design/social-media-design,20.0,,,,,,False
+20240501061832,2024-05-01,graphics-design/social-media-design,35.0,,,,,,False
+20240501061832,2024-05-01,graphics-design/social-media-design,50.0,,,,,,False
+20240601132800,2024-06-01,graphics-design/social-media-design,15.0,,,,,,False
+20240601132800,2024-06-01,graphics-design/social-media-design,15.0,,,,,,False
+20240601132800,2024-06-01,graphics-design/social-media-design,10.0,,,,,,False
+20240601132800,2024-06-01,graphics-design/social-media-design,15.0,,,,,,False
+20240601132800,2024-06-01,graphics-design/social-media-design,25.0,,,,,,False
+20240601132800,2024-06-01,graphics-design/social-media-design,20.0,,,,,,False
+20240601132800,2024-06-01,graphics-design/social-media-design,30.0,,,,,,False
+20240601132800,2024-06-01,graphics-design/social-media-design,60.0,,,,,,False
+20240701181306,2024-07-01,graphics-design/social-media-design,15.0,,,,,,False
+20240701181306,2024-07-01,graphics-design/social-media-design,15.0,,,,,,False
+20240701181306,2024-07-01,graphics-design/social-media-design,15.0,,,,,,False
+20240701181306,2024-07-01,graphics-design/social-media-design,15.0,,,,,,False
+20240701181306,2024-07-01,graphics-design/social-media-design,20.0,,,,,,False
+20240701181306,2024-07-01,graphics-design/social-media-design,20.0,,,,,,False
+20240701181306,2024-07-01,graphics-design/social-media-design,30.0,,,,,,False
+20240701181306,2024-07-01,graphics-design/social-media-design,55.0,,,,,,False
+20240801102048,2024-08-01,graphics-design/social-media-design,15.0,,,,,,False
+20240801102048,2024-08-01,graphics-design/social-media-design,5.0,,,,,,False
+20240801102048,2024-08-01,graphics-design/social-media-design,10.0,,,,,,False
+20240801102048,2024-08-01,graphics-design/social-media-design,5.0,,,,,,False
+20240801102048,2024-08-01,graphics-design/social-media-design,20.0,,,,,,False
+20240801102048,2024-08-01,graphics-design/social-media-design,40.0,,,,,,False
+20240801102048,2024-08-01,graphics-design/social-media-design,20.0,,,,,,False
+20240801102048,2024-08-01,graphics-design/social-media-design,50.0,,,,,,False
+20240901112000,2024-09-01,graphics-design/social-media-design,15.0,,,,,,False
+20240901112000,2024-09-01,graphics-design/social-media-design,15.0,,,,,,False
+20240901112000,2024-09-01,graphics-design/social-media-design,15.0,,,,,,False
+20240901112000,2024-09-01,graphics-design/social-media-design,10.0,,,,,,False
+20240901112000,2024-09-01,graphics-design/social-media-design,30.0,,,,,,False
+20240901112000,2024-09-01,graphics-design/social-media-design,20.0,,,,,,False
+20240901112000,2024-09-01,graphics-design/social-media-design,20.0,,,,,,False
+20240901112000,2024-09-01,graphics-design/social-media-design,70.0,,,,,,False
+20241001013230,2024-10-01,graphics-design/social-media-design,10.0,,,,,,False
+20241001013230,2024-10-01,graphics-design/social-media-design,15.0,,,,,,False
+20241001013230,2024-10-01,graphics-design/social-media-design,10.0,,,,,,False
+20241001013230,2024-10-01,graphics-design/social-media-design,15.0,,,,,,False
+20241001013230,2024-10-01,graphics-design/social-media-design,30.0,,,,,,False
+20241001013230,2024-10-01,graphics-design/social-media-design,20.0,,,,,,False
+20241001013230,2024-10-01,graphics-design/social-media-design,25.0,,,,,,False
+20241001013230,2024-10-01,graphics-design/social-media-design,50.0,,,,,,False
+20241209050957,2024-12-09,graphics-design/social-media-design,15.0,,,,,,False
+20241209050957,2024-12-09,graphics-design/social-media-design,10.0,,,,,,False
+20241209050957,2024-12-09,graphics-design/social-media-design,15.0,,,,,,False
+20241209050957,2024-12-09,graphics-design/social-media-design,15.0,,,,,,False
+20241209050957,2024-12-09,graphics-design/social-media-design,20.0,,,,,,False
+20241209050957,2024-12-09,graphics-design/social-media-design,20.0,,,,,,False
+20241209050957,2024-12-09,graphics-design/social-media-design,25.0,,,,,,False
+20241209050957,2024-12-09,graphics-design/social-media-design,50.0,,,,,,False

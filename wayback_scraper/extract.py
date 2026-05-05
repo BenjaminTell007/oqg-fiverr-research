@@ -28,7 +28,10 @@ def extract_gigs(html: str, timestamp: str, category: str) -> list[dict]:
 
     rows = []
     for card in cards:
-        # Price: <a class="price"> > <span>
+        # Price — two formats seen in the wild:
+        #   Pre-May 2023: <a class="price"><span>$10</span></a>
+        #   May 2023+:    <a ...><span class="text-bold ...">From <span>$10</span></span></a>
+        import re as _re
         price = None
         price_a = card.find("a", class_="price")
         if price_a:
@@ -39,6 +42,17 @@ def extract_gigs(html: str, timestamp: str, category: str) -> list[dict]:
                     price = float(raw)
                 except ValueError:
                     pass
+        if price is None:
+            # Fallback: find any <span> whose sole text looks like "$NNN"
+            for span in card.find_all("span"):
+                txt = span.get_text(strip=True)
+                m = _re.fullmatch(r"\$(\d[\d,]*(?:\.\d+)?)", txt)
+                if m:
+                    try:
+                        price = float(m.group(1).replace(",", ""))
+                        break
+                    except ValueError:
+                        pass
 
         # Title: <h3> > <a>
         title = None

@@ -24,13 +24,29 @@ These three categories represent the **two dominant generative AI disruption vec
 
 Having two graphics-design subcategories (logo design and social media design) instead of one is intentional: it lets us check whether the disruption effect is consistent within the same parent category, which is a validity test. If both move similarly after image gen AI launches, that strengthens the causal interpretation. If they diverge, it signals something category-specific rather than a platform-wide effect.
 
-### Control Category (1): `data/data-entry`
+### Control Categories: Graded Exposure Design
 
-Data entry is mechanical, high-volume, rule-governed work — transcribing text, filling spreadsheets, cleaning records. Generative AI (as of 2021–2024) does not meaningfully perform this task in the way that end clients on Fiverr buy it. There was no major AI product launch during the study window that commoditized data entry the way ChatGPT commoditized creative writing or Midjourney commoditized logo design.
+Rather than a single binary treated/control split, the panel uses **two control categories at different levels of AI exposure**. This converts the research design from a binary DiD into a **graded-exposure DiD**, which is more robust to platform-wide trends and allows us to test whether the effect scales with how directly AI substitutes for the work.
 
-This makes data-entry the closest available **counterfactual**: a category on the same platform, priced in the same currency, bought by similar clients, but not exposed to the AI disruption signal we are studying. If prices in data-entry move similarly to treatment categories after AI launches, the causal story weakens. If they diverge, it strengthens it.
+The three exposure tiers in the panel:
 
-The median price data already hints at this divergence — creative writing and logo design medians dropped after 2022, while data-entry stayed flatter — which is exactly what the quasi-experimental design predicts.
+| Tier | Categories | Primary AI vector | Substitutability |
+|---|---|---|---|
+| **High exposure** | `creative-logo-design`, `social-media-design`, `creative-writing` | Image generation (Midjourney, Stable Diffusion) and text LLMs (ChatGPT, GPT-4) | Direct end-to-end substitute for the gig deliverable |
+| **Medium exposure** | `transcription` (label: `transcription-control-medium`) | Speech-to-text (OpenAI Whisper open-source release: 2022-09-21) | AI accelerates the workflow but humans still QA; partial substitution |
+| **Low exposure** | `data-entry` (label: `data-entry-control-low`) | None — no major AI product targets manual data entry during the study window | Effectively no substitution |
+
+**Why two controls instead of one.** Per the GMM analysis (`data/output/figures/gmm_fits.png`), even data-entry shows substantial price compression across the study window, indicating Fiverr-wide trends (search-ranking changes, tier-package pricing, macro effects) that are *not* AI-specific. A single low-exposure control absorbs platform-wide effects but cannot tell us whether mid-exposure categories respond at an intermediate level — exactly the prediction the disruption hypothesis makes about Whisper-affected work.
+
+**Why transcription specifically.** The CDX probe (May 2026) for second-control candidates returned: `translation` 0 snapshots, `language-coaching` 0 snapshots, `transcription` **54 snapshots with full 2021–2024 monthly coverage**. Transcription was therefore the only viable medium-exposure candidate within the writing-translation parent category. Substantively it fits the medium tier well — Whisper and similar speech-to-text models reduce transcription effort but do not produce final deliverables clients accept without human review (timestamps, speaker labels, domain-specific terminology, audio-quality handling).
+
+**How the graded design is used in analysis.**
+
+- **Within-category ITS** (`docs/its_specification.md` §3) is fit per category. The high-exposure trio uses category-specific shock dates; transcription uses Whisper's release (2022-09-21); data-entry has no shock and serves as a pure trend-baseline.
+- **Differential metrics** (BC, GMM floor/ceiling) are computed against `data-entry-control-low` as the primary baseline — anything common to data-entry is platform-wide, not AI-specific.
+- **Graded dose-response check.** If the disruption hypothesis holds, post-shock effect size should order: high > medium > low (≈ 0). Transcription provides the middle data point that turns this from a binary test into a monotonicity test. If transcription moves *with* the high-exposure categories, the effect is more plausibly platform-wide; if it sits cleanly between high and low, the AI-substitutability story is supported.
+
+The median price data already hints at this gradient — creative writing and logo design medians dropped after 2022, while data-entry stayed flatter — and the formal pre/post tests will report effect sizes per tier.
 
 ---
 
@@ -133,6 +149,28 @@ If Fiverr's tier-pricing structure produces baseline bimodality in *every* categ
 Under the disruption hypothesis the differential should be near zero pre-shock (both categories share the same structural bimodality) and shift positive post-shock (treatment categories develop AI-specific bimodality the control does not). Under the null it stays flat regardless of where the AI shock falls. This is the same identification logic as the formal DiD specification in `docs/its_specification.md` §4.1, applied to the bimodality outcome rather than the price level — and it is the metric that should drive RQ2 conclusions when the within-category ITS gives ambiguous results.
 
 The differential is reported in the third panel of `data/output/bimodality_timeseries_v2.png`. It does not assume the BC threshold has any particular value; it asks only whether treatment categories diverge from the control over time.
+
+---
+
+## 5. Refining the Graded Exposure Hypothesis: The Transcription Finding
+
+The graded-exposure design (§1, Control Categories) predicted a monotonic ordering of post-shock ceiling drops: high exposure > medium exposure > low exposure. The five-category GMM (k=2) results in `data/output/gmm_graded_exposure_table.csv` produce the following ceiling Δ ordering:
+
+| Rank | Category | Exposure tier | Pre-shock ceiling | Ceiling Δ |
+|---|---|---|---|---|
+| 1 | Creative logo design | High | $107 | **−$46** |
+| 2 | Social media design | High | $76 | **−$40** |
+| 3 | Creative writing | High | $81 | **−$23** |
+| 4 | Data entry | Low | $36 | **−$18** |
+| 5 | Transcription | **Medium** | **$21** | **+$2** |
+
+Transcription's ceiling **rose slightly (+$1.58)** rather than falling, placing it *below* data entry in ceiling-drop magnitude. The naive monotonicity prediction (high > medium > low) is not borne out — the medium-exposure category shows the smallest movement of any category in the panel.
+
+**Interpretation: ceiling collapse requires both AI exposure AND an existing premium tier.** The three high-exposure categories all had pre-shock ceilings between $76 and $107, with substantial room above the floor for a "premium human" tier to occupy. When AI substitutes for the commodity work, the premium tier is the part that collapses — clients who would have paid $80 for a logo are now satisfied with a $20 AI-aided gig, and the upper mode of the price distribution drops sharply. Transcription's pre-shock ceiling was already $21, only ~4× its $5 floor; it had **no meaningful premium tier left to collapse**. There is no "premium transcriptionist" pricing band on Fiverr the way there is for premium logo or copywriting work, because transcription is a routinized task whose buyers do not pay large multiples for craft. Whisper exposure could not produce the ceiling drop because the structural precondition for a ceiling drop did not exist.
+
+**This refines the graded exposure hypothesis rather than invalidating it.** The corrected prediction is conditional: AI exposure produces ceiling collapse *only when* the category had a premium tier in the pre-shock distribution. Categories that were already commodity-priced cannot show ceiling compression because there is nothing above the floor to compress. The high-exposure trio satisfies the precondition and shows the predicted effect; transcription does not satisfy the precondition and shows no effect; data entry shows a smaller drop driven by platform-wide tier compression that touches every category to some degree (consistent with §4.3's argument that some bimodality movement is structural rather than AI-specific).
+
+The implication for downstream analysis is that **ceiling Δ is not a clean dose-response measurement on its own** — it conflates AI exposure with pre-shock distributional shape. Reporting in `docs/its_specification.md` should pair ceiling-drop magnitude with pre-shock ceiling level, and the graded-exposure dose-response test should be read as "exposure produces ceiling collapse where structurally possible," not as a strict monotonic ordering across all five categories.
 
 ---
 

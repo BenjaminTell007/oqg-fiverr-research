@@ -25,28 +25,37 @@ FIG_DIR = Path("data/output/figures")
 GMM_FITS_PNG = FIG_DIR / "gmm_fits.png"
 TRAJ_PNG = FIG_DIR / "floor_ceiling_trajectories.png"
 SUMMARY_CSV = "data/output/gmm_floor_ceiling.csv"
+GRADED_TABLE_CSV = "data/output/gmm_graded_exposure_table.csv"
 
-CONTROL_CATEGORY = "data/data-entry"
+LOW_CONTROL = "data/data-entry"
+MEDIUM_CONTROL = "transcription-control-medium"
+CONTROL_CATEGORY = LOW_CONTROL  # used for differential calculations
 
+# Whisper open-source release (2022-09-21) is the primary AI shock for
+# transcription as a medium-exposure category; data-entry has no plausible
+# AI shock during the study window and uses the pooled image-gen reference.
 CATEGORY_SHOCKS = {
     "graphics-design/creative-logo-design":  ["2022-07-12", "2022-08-22", "2023-03-15"],
     "graphics-design/social-media-design":   ["2022-07-12", "2022-08-22", "2023-03-15"],
     "content-writing/creative-writing":      ["2022-11-30", "2023-02-01", "2023-03-14", "2024-05-13"],
-    CONTROL_CATEGORY:                        [],
+    MEDIUM_CONTROL:                          ["2022-09-21"],
+    LOW_CONTROL:                             [],
 }
 
 CATEGORY_COLORS = {
     "graphics-design/creative-logo-design":  "#1f77b4",
     "graphics-design/social-media-design":   "#2ca02c",
     "content-writing/creative-writing":      "#d62728",
-    CONTROL_CATEGORY:                        "#7f7f7f",
+    MEDIUM_CONTROL:                          "#ff7f0e",
+    LOW_CONTROL:                             "#7f7f7f",
 }
 
 CATEGORY_DISPLAY = {
-    "graphics-design/creative-logo-design":  "Creative logo design",
-    "graphics-design/social-media-design":   "Social media design",
-    "content-writing/creative-writing":      "Creative writing",
-    CONTROL_CATEGORY:                        "Data entry (control)",
+    "graphics-design/creative-logo-design":  "Creative logo design (high)",
+    "graphics-design/social-media-design":   "Social media design (high)",
+    "content-writing/creative-writing":      "Creative writing (high)",
+    MEDIUM_CONTROL:                          "Transcription (medium)",
+    LOW_CONTROL:                             "Data entry (low)",
 }
 
 CONTROL_REFERENCE_SHOCK = "2022-07-12"
@@ -86,11 +95,15 @@ def split_pre_post(df: pd.DataFrame, cat: str):
 
 
 def plot_gmm_fits(df: pd.DataFrame, out_path: Path) -> pd.DataFrame:
-    fig, axes = plt.subplots(2, 2, figsize=(13, 9))
+    cats = list(CATEGORY_SHOCKS.keys())
+    n_cat = len(cats)
+    ncols = 3
+    nrows = (n_cat + ncols - 1) // ncols
+    fig, axes = plt.subplots(nrows, ncols, figsize=(16, 4.5 * nrows))
     axes = axes.flatten()
     rows = []
 
-    for ax, cat in zip(axes, CATEGORY_SHOCKS.keys()):
+    for ax, cat in zip(axes, cats):
         pre, post, cut = split_pre_post(df, cat)
         color = CATEGORY_COLORS[cat]
 
@@ -142,6 +155,9 @@ def plot_gmm_fits(df: pd.DataFrame, out_path: Path) -> pd.DataFrame:
             "post_ceiling_weight": gmm_post["ceiling_weight"] if gmm_post else np.nan,
         })
 
+    for ax in axes[len(cats):]:
+        ax.set_visible(False)
+
     fig.suptitle("Pre- vs post-shock price densities and GMM (k=2) modes",
                  fontsize=13, y=1.005)
     fig.tight_layout()
@@ -171,17 +187,25 @@ def monthly_floor_ceiling(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def plot_trajectories(traj: pd.DataFrame, events: dict, out_path: Path) -> None:
-    fig, axes = plt.subplots(2, 2, figsize=(14, 9), sharex=True)
+    cats = list(CATEGORY_SHOCKS.keys())
+    n_cat = len(cats)
+    ncols = 3
+    nrows = (n_cat + ncols - 1) // ncols
+    fig, axes = plt.subplots(nrows, ncols, figsize=(16, 4.5 * nrows), sharex=True)
     axes = axes.flatten()
 
-    for ax, cat in zip(axes, CATEGORY_SHOCKS.keys()):
+    for ax, cat in zip(axes, cats):
         sub = traj[traj["category"] == cat]
         color = CATEGORY_COLORS[cat]
-        ax.plot(sub["month"], sub["p10"], "-o", ms=3, color=color, alpha=0.55,
+        sub_p10 = sub.dropna(subset=["p10"])
+        sub_p90 = sub.dropna(subset=["p90"])
+        ax.plot(sub_p10["month"], sub_p10["p10"], "-o", ms=3, color=color, alpha=0.55,
                 linewidth=1.0, label="p10 (floor)")
-        ax.plot(sub["month"], sub["p90"], "-o", ms=3, color=color, alpha=1.0,
+        ax.plot(sub_p90["month"], sub_p90["p90"], "-o", ms=3, color=color, alpha=1.0,
                 linewidth=1.8, label="p90 (ceiling)")
-        ax.fill_between(sub["month"], sub["p10"], sub["p90"], color=color, alpha=0.08)
+        sub_both = sub.dropna(subset=["p10", "p90"])
+        ax.fill_between(sub_both["month"], sub_both["p10"], sub_both["p90"],
+                        color=color, alpha=0.08)
 
         for d_str in CATEGORY_SHOCKS[cat]:
             d = pd.to_datetime(d_str)
@@ -193,8 +217,10 @@ def plot_trajectories(traj: pd.DataFrame, events: dict, out_path: Path) -> None:
         ax.legend(fontsize=8, loc="upper left")
         ax.grid(True, alpha=0.3)
 
-    axes[-1].set_xlabel("Month")
-    axes[-2].set_xlabel("Month")
+    for ax in axes[len(cats):]:
+        ax.set_visible(False)
+    for ax in axes[max(0, len(cats) - ncols):len(cats)]:
+        ax.set_xlabel("Month")
     fig.suptitle("Monthly p10 (floor) and p90 (ceiling) trajectories\n"
                  "Dashed verticals: AI shock dates per category",
                  fontsize=13, y=1.005)
@@ -250,10 +276,14 @@ def main():
 
     print("\n" + "=" * 110)
     print("  GMM (k=2) floor/ceiling means: pre- vs post-shock per category")
+    print("  Ordered by ceiling drop magnitude (most negative first)")
     print("=" * 110)
     table = summary_table(gmm_summary)
+    table_ordered = table.sort_values("ceiling_Δ", ascending=True).reset_index(drop=True)
     with pd.option_context("display.float_format", lambda x: f"{x:.2f}"):
-        print(table.to_string(index=False))
+        print(table_ordered.to_string(index=False))
+    table_ordered.to_csv(GRADED_TABLE_CSV, index=False)
+    print(f"\nSaved {GRADED_TABLE_CSV}")
 
 
 if __name__ == "__main__":

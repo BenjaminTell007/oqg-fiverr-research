@@ -1,0 +1,106 @@
+2026-05-05 11:31:19  INFO     scrape_transcription.py start
+2026-05-05 11:31:19  INFO     === START transcription-control-medium ===
+2026-05-05 11:31:49  WARNING  CDX returned empty (attempt 1/8) — waiting 30 s
+2026-05-05 11:32:30  INFO     46 snapshots to process (2021-2024)
+2026-05-05 11:32:30  INFO     [1/46] ts=20210102050305
+2026-05-05 11:32:32  INFO     OK    ts=20210102050305  method=requests  gigs=8  prices=8
+2026-05-05 11:32:40  INFO     [2/46] ts=20210201100315
+2026-05-05 11:32:42  INFO     OK    ts=20210201100315  method=requests  gigs=8  prices=8
+2026-05-05 11:32:52  INFO     [3/46] ts=20210301011345
+2026-05-05 11:32:53  INFO     OK    ts=20210301011345  method=requests  gigs=8  prices=8
+2026-05-05 11:33:04  INFO     [4/46] ts=20210401052330
+2026-05-05 11:33:06  INFO     OK    ts=20210401052330  method=requests  gigs=8  prices=8
+2026-05-05 11:33:16  INFO     [5/46] ts=20210501081434
+2026-05-05 11:33:19  INFO     OK    ts=20210501081434  method=requests  gigs=8  prices=8
+2026-05-05 11:33:28  INFO     [6/46] ts=20210602212824
+2026-05-05 11:33:30  INFO     OK    ts=20210602212824  method=requests  gigs=8  prices=8
+2026-05-05 11:33:41  INFO     [7/46] ts=20210702070801
+2026-05-05 11:33:44  INFO     OK    ts=20210702070801  method=requests  gigs=8  prices=8
+2026-05-05 11:33:53  INFO     [8/46] ts=20210801001437
+2026-05-05 11:33:56  INFO     OK    ts=20210801001437  method=requests  gigs=8  prices=8
+2026-05-05 11:34:05  INFO     [9/46] ts=20210903114236
+2026-05-05 11:34:08  INFO     OK    ts=20210903114236  method=requests  gigs=8  prices=8
+2026-05-05 11:34:17  INFO     [10/46] ts=20211002120538
+2026-05-05 11:34:19  INFO     OK    ts=20211002120538  method=requests  gigs=8  prices=8
+2026-05-05 11:34:30  INFO     [11/46] ts=20211101224711
+2026-05-05 11:34:44  INFO     OK    ts=20211101224711  method=requests  gigs=8  prices=8
+2026-05-05 11:34:53  INFO     [12/46] ts=20211201144530
+2026-05-05 11:34:55  INFO     OK    ts=20211201144530  method=requests  gigs=8  prices=8
+2026-05-05 11:35:03  INFO     [13/46] ts=20220101013313
+2026-05-05 11:35:05  INFO     OK    ts=20220101013313  method=requests  gigs=8  prices=8
+2026-05-05 11:35:14  INFO     [14/46] ts=20220201163901
+2026-05-05 11:35:16  INFO     OK    ts=20220201163901  method=requests  gigs=8  prices=8
+2026-05-05 11:35:26  INFO     [15/46] ts=20220301160129
+2026-05-05 11:35:27  INFO     OK    ts=20220301160129  method=requests  gigs=8  prices=8
+2026-05-05 11:35:38  INFO     [16/46] ts=20220402192152
+2026-05-05 11:35:40  INFO     OK    ts=20220402192152  method=requests  gigs=8  prices=8
+2026-05-05 11:35:51  INFO     [17/46] ts=20220503160929
+2026-05-05 11:35:54  INFO     OK    ts=20220503160929  method=requests  gigs=12  prices=12
+2026-05-05 11:36:03  INFO     [18/46] ts=20220601032416
+2026-05-05 11:36:09  INFO     OK    ts=20220601032416  method=requests  gigs=8  prices=0
+2026-05-05 11:36:19  INFO     [19/46] ts=20220701032925
+2026-05-05 11:36:21  INFO     OK    ts=20220701032925  method=requests  gigs=8  prices=8
+2026-05-05 11:36:33  INFO     [20/46] ts=20220807160330
+2026-05-05 11:36:37  INFO     OK    ts=20220807160330  method=requests  gigs=8  prices=8
+2026-05-05 11:36:48  INFO     [21/46] ts=20220901114425
+2026-05-05 11:36:49  INFO     OK    ts=20220901114425  method=requests  gigs=8  prices=8
+2026-05-05 11:36:58  INFO     [22/46] ts=20221001173706
+2026-05-05 11:37:07  INFO     OK    ts=20221001173706  method=requests  gigs=8  prices=8
+2026-05-05 11:37:18  INFO     [23/46] ts=20221104045908
+2026-05-05 11:37:20  INFO     OK    ts=20221104045908  method=requests  gigs=8  prices=8
+2026-05-05 11:37:29  INFO     [24/46] ts=20221203213752
+2026-05-05 11:37:30  INFO     OK    ts=20221203213752  method=requests  gigs=8  prices=8
+2026-05-05 11:37:39  INFO     [25/46] ts=20230101040341
+2026-05-05 11:37:42  INFO     OK    ts=20230101040341  method=requests  gigs=8  prices=8
+2026-05-05 11:37:52  INFO     [26/46] ts=20230203145402
+2026-05-05 11:37:54  INFO     OK    ts=20230203145402  method=requests  gigs=8  prices=8
+2026-05-05 11:38:05  INFO     [27/46] ts=20230301013532
+2026-05-05 11:38:09  INFO     OK    ts=20230301013532  method=requests  gigs=8  prices=8
+2026-05-05 11:38:17  INFO     [28/46] ts=20230402155702
+2026-05-05 11:38:21  INFO     OK    ts=20230402155702  method=requests  gigs=8  prices=8
+2026-05-05 11:38:30  INFO     [29/46] ts=20230508052454
+2026-05-05 11:38:35  INFO     OK    ts=20230508052454  method=requests  gigs=8  prices=8
+2026-05-05 11:38:43  INFO     [30/46] ts=20230603214155
+2026-05-05 11:38:44  INFO     OK    ts=20230603214155  method=requests  gigs=8  prices=8
+2026-05-05 11:38:56  INFO     [31/46] ts=20230720090520
+2026-05-05 11:38:58  INFO     OK    ts=20230720090520  method=requests  gigs=8  prices=0
+2026-05-05 11:39:09  INFO     [32/46] ts=20230820145739
+2026-05-05 11:39:10  INFO     OK    ts=20230820145739  method=requests  gigs=8  prices=8
+2026-05-05 11:39:19  INFO     [33/46] ts=20230902194717
+2026-05-05 11:39:24  INFO     OK    ts=20230902194717  method=requests  gigs=8  prices=8
+2026-05-05 11:39:35  INFO     [34/46] ts=20231020224608
+2026-05-05 11:39:39  INFO     OK    ts=20231020224608  method=requests  gigs=8  prices=8
+2026-05-05 11:39:48  INFO     [35/46] ts=20231222072115
+2026-05-05 11:39:50  INFO     OK    ts=20231222072115  method=requests  gigs=8  prices=8
+2026-05-05 11:40:00  INFO     [36/46] ts=20240104082032
+2026-05-05 11:40:01  INFO     OK    ts=20240104082032  method=requests  gigs=8  prices=8
+2026-05-05 11:40:10  INFO     [37/46] ts=20240201165309
+2026-05-05 11:40:13  INFO     OK    ts=20240201165309  method=requests  gigs=8  prices=8
+2026-05-05 11:40:24  INFO     [38/46] ts=20240312024028
+2026-05-05 11:40:25  INFO     OK    ts=20240312024028  method=requests  gigs=8  prices=8
+2026-05-05 11:40:35  INFO     [39/46] ts=20240401121655
+2026-05-05 11:40:37  INFO     OK    ts=20240401121655  method=requests  gigs=8  prices=8
+2026-05-05 11:40:48  INFO     [40/46] ts=20240501062245
+2026-05-05 11:40:55  INFO     OK    ts=20240501062245  method=requests  gigs=8  prices=8
+2026-05-05 11:41:04  INFO     [41/46] ts=20240601133319
+2026-05-05 11:41:05  INFO     OK    ts=20240601133319  method=requests  gigs=8  prices=8
+2026-05-05 11:41:14  INFO     [42/46] ts=20240701181906
+2026-05-05 11:41:16  INFO     OK    ts=20240701181906  method=requests  gigs=8  prices=8
+2026-05-05 11:41:25  INFO     [43/46] ts=20240801102545
+2026-05-05 11:41:27  INFO     OK    ts=20240801102545  method=requests  gigs=8  prices=8
+2026-05-05 11:41:38  INFO     [44/46] ts=20240901112709
+2026-05-05 11:41:40  INFO     OK    ts=20240901112709  method=requests  gigs=8  prices=8
+2026-05-05 11:41:50  INFO     [45/46] ts=20241001013852
+2026-05-05 11:41:52  INFO     OK    ts=20241001013852  method=requests  gigs=8  prices=8
+2026-05-05 11:42:03  INFO     [46/46] ts=20241218010623
+2026-05-05 11:42:09  INFO     OK    ts=20241218010623  method=requests  gigs=8  prices=8
+2026-05-05 11:42:18  INFO     === DONE total_rows=372 ===
+2026-05-05 11:42:18  INFO     Grand total rows written: 372
+2026-05-05 11:42:18  INFO     Transcription snapshots by year:
+year
+2021    12
+2022    12
+2023    11
+2024    11
+2026-05-05 11:42:18  INFO     Total transcription rows: 372
+2026-05-05 11:42:18  INFO     Rows with price: 356

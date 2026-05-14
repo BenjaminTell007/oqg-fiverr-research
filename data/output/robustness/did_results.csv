@@ -1,0 +1,7 @@
+treated_category,control_category,outcome,post_cutoff,T,newey_west_L,did_coef,did_se,did_p,did_sig_05,did_sig_10,rsq
+graphics-design/creative-logo-design,data/data-entry,price_median,2022-07-12,71,3,-41.3327716454363,20.034804954421084,0.043045922790950895,True,True,0.28890669911328803
+graphics-design/creative-logo-design,data/data-entry,BC,2022-07-12,69,3,-0.0934488195033869,0.043682021968357326,0.0362317627178315,True,True,0.10631896600411739
+graphics-design/social-media-design,data/data-entry,price_median,2022-07-12,81,3,-9.756543511619087,7.715373576628506,0.2098937295912282,False,False,0.33163097188472557
+graphics-design/social-media-design,data/data-entry,BC,2022-07-12,79,3,-0.13602865155101335,0.03788269080620557,0.0005900876294884124,True,True,0.15183639891867828
+content-writing/creative-writing,data/data-entry,price_median,2022-11-30,79,3,-17.391782046484575,10.627705090575471,0.1059903516649439,False,False,0.28752862150150327
+content-writing/creative-writing,data/data-entry,BC,2022-11-30,77,3,-0.02025987054276978,0.048724128919091475,0.6787874128482018,False,False,0.11382480341689516

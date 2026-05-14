@@ -30,20 +30,24 @@ BC_THRESHOLD = 0.555
 DIP_ALPHA = 0.05
 MIN_N_QUARTER = 10
 MIN_N_MONTH = 5
-CONTROL_CATEGORY = "data/data-entry"
+LOW_CONTROL = "data-entry-control-low"
+MEDIUM_CONTROL = "transcription-control-medium"
+CONTROL_CATEGORY = LOW_CONTROL  # baseline for differentials
 
 CATEGORY_SHOCKS = {
     "graphics-design/creative-logo-design":  ["2022-07-12", "2022-08-22", "2023-03-15"],
     "graphics-design/social-media-design":   ["2022-07-12", "2022-08-22", "2023-03-15"],
     "content-writing/creative-writing":      ["2022-11-30", "2023-02-01", "2023-03-14", "2024-05-13"],
-    CONTROL_CATEGORY:                        [],
+    MEDIUM_CONTROL:                          ["2022-09-21"],
+    LOW_CONTROL:                             [],
 }
 
 CATEGORY_COLORS = {
     "graphics-design/creative-logo-design":  "#1f77b4",
     "graphics-design/social-media-design":   "#2ca02c",
     "content-writing/creative-writing":      "#d62728",
-    CONTROL_CATEGORY:                        "#7f7f7f",
+    MEDIUM_CONTROL:                          "#ff7f0e",
+    LOW_CONTROL:                             "#7f7f7f",
 }
 
 

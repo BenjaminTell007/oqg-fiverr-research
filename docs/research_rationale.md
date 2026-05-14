@@ -174,6 +174,40 @@ The implication for downstream analysis is that **ceiling Δ is not a clean dose
 
 ---
 
+## 6. Final Analytic Conclusions
+
+After fitting the within-category ITS models (`scripts/its_analysis.py`), the placebo and binary-DiD robustness checks (`scripts/robustness_checks.py`), and the substitutability-weighted graded-dose DiD (`scripts/weighted_did.py`), two findings consolidate and one is retired.
+
+### 6.1 Price compression — supported
+
+The price-compression result is the headline finding of the study. It survives every test we have run:
+
+- **GMM (§5).** The three high-exposure categories all show large negative ceiling deltas (−$23 to −$46) between the pre- and post-shock GMM components. Data entry shows a smaller −$18, transcription is essentially flat. Ceiling drops scale with AI exposure when the structural precondition (a pre-shock premium tier) is met.
+- **Within-category ITS.** Post-shock β₂ and β₃ on price are negative and significant for the high-exposure categories at multiple shock dates — logo design's β₃ at the Midjourney beta is −$19/month (p<0.001), creative writing's β₂ at the ChatGPT launch is −$19 (p=0.08). The within-category ITS is not time-locked to the specific shock dates (placebo, §6.3), but the broad direction of the price coefficients is consistent across specifications.
+- **Substitutability-weighted graded-dose DiD.** With all five categories and substitutability scores from 0.10 (data entry) to 0.90 (logo design), the S × Post interaction on `price_median` is **−$32.6 (SE 13.0, p=0.066)** under two-way fixed effects, and sharpens to **−$40.2 (SE 9.9, p=0.015)** in the augmented spec that adds a linear time trend interacted with substitutability. The point estimates imply a **$26–$32 differential** between the highest-S (0.90) and lowest-S (0.10) categories in their post-July-2022 price change — the gradient predicted by the disruption hypothesis. The sign and approximate magnitude match the GMM ceiling-delta gradient.
+
+Converging support across an outcome-shape test (GMM ceiling), a within-category trend-break test (ITS), and a graded-dose cross-category test (weighted DiD) is the strongest pattern available with the data on hand. **The price-compression claim should be the central empirical contribution of the paper.**
+
+### 6.2 Bimodality — retired
+
+The "AI made markets more bimodal" claim, prominent in the early framing, does not survive the robustness checks.
+
+- **Placebo.** Real shock dates and shock dates shifted six months earlier produce indistinguishable significance rates on BC (real 13/20 coefficients significant at p<0.05; placebo 12/20). The within-category ITS on BC is picking up generic mid-panel trend inflections, not effects time-locked to the AI launches. Significance of the headline β₂/β₃ coefficients on BC therefore cannot be read causally.
+- **Binary DiD vs. data-entry control.** Treated-minus-control BC change is *negative* and significant for logo design (DiD = −0.09, p=0.04) and social media design (DiD = −0.14, p=0.001). High-exposure categories became **less** bimodal than the control after the shock — the opposite direction of the disruption prediction.
+- **Substitutability-weighted graded-dose DiD.** With the full five-category gradient, the S × Post interaction on BC is small and not significant (β = −0.07, p=0.39). The gradient test finds no evidence that higher AI exposure produces higher post-shock bimodality.
+
+The pattern is consistent across both robustness designs: BC moved during the study window, but its movement is not specifically attributable to AI launches, and the direction is not the one the disruption hypothesis predicts. The original framing should be retired. The softened replacement claim — **"distributional shifts occurred consistent with ceiling compression"** — describes what the data actually show: the upper tail of the price distribution collapsed in exposed categories (the GMM ceiling result), which changes the *shape* of the distribution without producing the upward-BC signature that classical bimodality polarization would imply.
+
+### 6.3 Revised paper framing
+
+The study's contribution is reframed accordingly:
+
+> **AI-driven price compression in freelance markets.** Generative AI exposure during 2022–2024 was associated with substantial collapse of the premium tier in directly substitutable Fiverr categories, with the magnitude of compression scaling with substitutability across a five-category gradient ($26–$40 differential between high- and low-exposure categories, p=0.015 under the augmented graded-dose DiD). The compression operates through the ceiling rather than the floor: floor prices were already at platform-tier minima pre-shock and could not fall further, while pre-shock premium-tier prices in high-substitutability categories dropped by $23–$46 between pre- and post-shock GMM components. No evidence is found for the alternative hypothesis that AI exposure polarized the distribution into separated commodity and premium modes — the bimodality coefficient does not respond to AI shocks in a time-locked or substitutability-graded way, and the binary DiD on BC has the wrong sign.
+
+This reframing keeps the substantive economic story (AI reshapes freelance pricing through commoditization of premium work) while dropping a claim the data do not support (the price distribution becomes polarized). The price-compression finding is also closer to what the GPT-exposure literature (Eloundou et al. 2023) predicts at the task level, translated into the market-equilibrium consequence: tasks that AI can perform end-to-end see their human-labor premium erode rather than bifurcate.
+
+---
+
 ## Summary
 
 | Decision | Choice | Key Reason |

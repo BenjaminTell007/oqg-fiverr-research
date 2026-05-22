@@ -4,7 +4,7 @@
 
 ---
 
-## What This Study Is About (One Paragraph)
+## What This Study Is About 
 
 When AI tools like Midjourney, Stable Diffusion, and ChatGPT became widely available in 2022–2023, they could suddenly do things that freelancers on Fiverr had been getting paid to do — design logos, create social media graphics, write copy. This study asks: did that change what people were willing to pay for those services? We pulled four years of Fiverr price data (2021–2024) from archived web snapshots and compared how prices changed across five service categories — three that AI tools directly threaten, and two that they largely don't. The finding: prices in the AI-threatened categories compressed significantly, and it happened at the top end. Clients who used to pay $80–$107 for a professional logo stopped paying that once AI could do a passable version for nearly nothing. The cheap end of the market barely moved.
 
@@ -135,9 +135,9 @@ We tested the findings three ways:
 
 ---
 
-## Data Quality Issues Worth Mentioning1
+## Data Quality Issues Worth Mentioning
 
-These are real limitations — don't hide them.
+
 
 - **Fiverr changed its website layout in May 2023**, which initially broke our price extraction. We fixed it, but a handful of months still have no usable data (creative writing July/September 2023, data entry and transcription July 2023).
 - **Logo design has no data before May 2021** — the Wayback Machine didn't archive that category earlier. So logo design has a slightly shorter baseline period.

@@ -1,0 +1,8 @@
+| Outcome                | Spec           |   S×Post coef | SE       |   p-value | Sig.   |   Implied gap |   N obs |
+|:-----------------------|:---------------|--------------:|:---------|----------:|:-------|--------------:|--------:|
+| Price median (USD)     | Spec A (TWFE)  |       -32.625 | (13.013) |     0.066 | *      |         -26.1 |     195 |
+| Price median (USD)     | Spec B (trend) |       -40.2   | (9.870)  |     0.015 | **     |         -32.2 |     195 |
+| Bimodality coeff. (BC) | Spec A (TWFE)  |        -0.071 | (0.074)  |     0.387 |        |          -0.1 |     193 |
+| Bimodality coeff. (BC) | Spec B (trend) |         0.022 | (0.099)  |     0.835 |        |           0   |     193 |
+
+_Table 2: Substitutability-Weighted Graded-Dose DiD Results. Dependent variables: monthly median gig price (USD) and Sarle's bimodality coefficient (BC). Spec A = two-way fixed effects (category + month FE). Spec B = category FE + linear trend + S×Post + S×t. Standard errors are cluster-robust by category (5 clusters). Post cutoff = 2022-07-01. 'Implied gap' = (S_max − S_min) × β = 0.80 × β: estimated differential post-2022 change between highest-exposure (logo design, S=0.90) and lowest-exposure (data entry, S=0.10). * p<0.10; ** p<0.05; *** p<0.01._

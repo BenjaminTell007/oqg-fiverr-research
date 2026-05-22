@@ -1,0 +1,9 @@
+| Category             | Exposure   |   Pre floor ($) |   Post floor ($) |   Floor Δ ($) |   Pre ceiling ($) |   Post ceiling ($) |   Ceiling Δ ($) |
+|:---------------------|:-----------|----------------:|-----------------:|--------------:|------------------:|-------------------:|----------------:|
+| Creative logo design | High       |           17.87 |            16.45 |         -1.42 |            106.75 |              60.41 |          -46.34 |
+| Social media design  | High       |           17.02 |            13.46 |         -3.55 |             75.81 |              36.25 |          -39.56 |
+| Creative writing     | High       |           13.04 |            11.4  |         -1.64 |             81.07 |              58    |          -23.07 |
+| Data entry           | Low        |            8.76 |             5    |         -3.76 |             35.66 |              17.35 |          -18.31 |
+| Transcription        | Medium     |            5    |             5    |         -0    |             21.29 |              22.87 |            1.58 |
+
+_Table 4: GMM (k=2) Pre- vs. Post-Shock Price Distribution Components. Floor = lower-mean Gaussian component; ceiling = upper-mean component; fitted to log-prices separately for pre- and post-primary-shock periods. Pre/post split at each category's primary AI shock date (logo design and social media: 2022-07-12; creative writing: 2022-11-30; transcription: 2022-09-21; data entry: 2022-07-12 as reference). Ceiling collapse dominates in high-exposure categories (−$23 to −$46); floor compression is modest (−$1.4 to −$3.6). Transcription's ceiling rose slightly (+$1.58) — no pre-existing premium tier to collapse._

@@ -2,8 +2,12 @@ requests
 playwright
 beautifulsoup4
 pandas
+numpy
 tqdm
 jupyter
 scipy
 matplotlib
 diptest
+statsmodels
+scikit-learn
+reportlab
